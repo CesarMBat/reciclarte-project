@@ -1,23 +1,47 @@
 import './App.css';
-//import Nav_Mobile from './Components/Nav-Mobile';
-import Carrousel from './Components/carrousel.jsx'
+import History from './Components/carrousel.jsx';
+import { Route, NavLink, HashRouter} from 'react-router-dom';
+import { Routes } from 'react-router-dom';
 function App() {
-
     return (
         <>
-            <header>
-          
-                <nav>
-                    <ul className="nav-header">
-                        <li className="list-header"> <a href="" className='a-nav'>Home</a> </li>
-                        <li className="list-header"> <a href="" className='a-nav'>Quem Somos</a> </li>
-                        <li className="list-header"> <a href="" className='a-nav'>Nossos Serviços</a> </li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-              <Carrousel></Carrousel>
-            </main>
+            <HashRouter>
+                <header>
+                    <div className="nav">
+                        <h1 className="title">Recicl&#39;Arte</h1>
+    
+                        <ul className="nav-header">
+                            <li className="list-header">
+                                {' '}
+                                <NavLink href="#" className="a-nav">
+                                    Página Inicial
+                                </NavLink>{' '}
+                            </li>
+                            <li className="list-header">
+                                {' '}
+                                <NavLink href="/history" className="a-nav">
+                                    Nossa História
+                                </NavLink>{' '}
+                            </li>
+                            <li className="list-header">
+                                {' '}
+                                <NavLink href="#" className="a-nav">
+                                    Quem Somos
+                                </NavLink>{' '}
+                            </li>
+                            <li className="list-header">
+                                {' '}
+                                <NavLink href="#" className="a-nav">
+                                    Nossos Serviços
+                                </NavLink>{' '}
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <Routes>
+                        <Route path="/history" Component={History} />
+                </Routes>
+            </HashRouter>
         </>
     );
 }
