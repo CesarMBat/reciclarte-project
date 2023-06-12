@@ -1,47 +1,24 @@
 import './App.css';
-import History from './Components/carrousel.jsx';
-import { Route, NavLink, HashRouter} from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
+import Index from './Components/index'
+import History from './Components/carrousel.jsx';
+import Layout from './Components/Layout';
+import Quemsomos from './Components/Quemsomos';
+import Services from './Components/Services';
+
 function App() {
     return (
         <>
-            <HashRouter>
-                <header>
-                    <div className="nav">
-                        <h1 className="title">Recicl&#39;Arte</h1>
-    
-                        <ul className="nav-header">
-                            <li className="list-header">
-                                {' '}
-                                <NavLink href="#" className="a-nav">
-                                    Página Inicial
-                                </NavLink>{' '}
-                            </li>
-                            <li className="list-header">
-                                {' '}
-                                <NavLink href="/history" className="a-nav">
-                                    Nossa História
-                                </NavLink>{' '}
-                            </li>
-                            <li className="list-header">
-                                {' '}
-                                <NavLink href="#" className="a-nav">
-                                    Quem Somos
-                                </NavLink>{' '}
-                            </li>
-                            <li className="list-header">
-                                {' '}
-                                <NavLink href="#" className="a-nav">
-                                    Nossos Serviços
-                                </NavLink>{' '}
-                            </li>
-                        </ul>
-                    </div>
-                </header>
+            <BrowserRouter>
                 <Routes>
-                        <Route path="/history" Component={History} />
+                    <Route path="/" element={< Layout/>}></Route>
+                    <Route index element={< Index/>}></Route>
+                    <Route path="/historia" element={<History />} />
+                    <Route path="/quem_somos" element={<Quemsomos />} />
+                    <Route path="/servicos" element={<Services />} />
                 </Routes>
-            </HashRouter>
+            </BrowserRouter>
         </>
     );
 }

@@ -6,11 +6,13 @@ import imagem1 from '../assets/imagem1-carrousel.png';
 import imagem2 from '../assets/imagem2-carrousel.png';
 import imagem3 from '../assets/imagem3-carrousel.png';
 import '../App.css';
+import Layout from './Layout';
 //import React, {Component} from 'react';
 
 function History() {
     return (
         <div>
+            <Layout />
             <h1 className="home-title">Um propósito em cada detalhe</h1>
             <article className='article-home'>
             <section className='section-history'>
