@@ -1,3 +1,11 @@
 .main-who{
     text-align: center;
 }
+.ul-timeline{
+    list-style-type: none;
+    
+}
+.li-timeline{
+    text-decoration: none;
+    color: black;
+}

@@ -6,6 +6,7 @@ import History from './Components/carrousel.jsx';
 import Layout from './Components/Layout';
 import Quemsomos from './Components/Quemsomos';
 import Services from './Components/Services';
+import Timeline from './Components/Timeline';
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                     <Route path="/historia" element={<History />} />
                     <Route path="/quem_somos" element={<Quemsomos />} />
                     <Route path="/servicos" element={<Services />} />
+                    <Route path="/timeline" element={<Timeline />} />
                 </Routes>
             </BrowserRouter>
         </>
