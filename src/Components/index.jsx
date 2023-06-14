@@ -6,12 +6,14 @@ const index = () => {
     return (
         <>
             <Layout/>
-            <div className="div-index">
-                <h1>OLÁ! CONHEÇA A: RECICL&#39;ARTE</h1>
-                <h2>ARRANJO DE FLORES</h2>
-                <h2>COM MATERIAIS RECICLADOS</h2>
-                <img src={Logo} alt="logo da Recicl'arte" />
-            </div>
+            <main className="main-index main-margin">
+                <div className="div-index">
+                    <h1>OLÁ! CONHEÇA A: RECICL&#39;ARTE</h1>
+                    <h2>ARRANJO DE FLORES</h2>
+                    <h2>COM MATERIAIS RECICLADOS</h2>
+                    <img src={Logo} alt="logo da Recicl'arte" />
+                </div>
+            </main>
         </>
     );
 };

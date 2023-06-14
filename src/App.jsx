@@ -7,6 +7,7 @@ import Layout from './Components/Layout';
 import Quemsomos from './Components/Quemsomos';
 import Services from './Components/Services';
 import Timeline from './Components/Timeline';
+import Objetivo from './Components/Objetivo';
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                     <Route path="/quem_somos" element={<Quemsomos />} />
                     <Route path="/servicos" element={<Services />} />
                     <Route path="/timeline" element={<Timeline />} />
+                    <Route path="/objetivo" element={<Objetivo />} />
                 </Routes>
             </BrowserRouter>
         </>
