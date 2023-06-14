@@ -8,18 +8,27 @@ const Quemsomos = () => {
         <div>
             <Layout />
             <main className="main-who">
-                <h1>Conheça a gente</h1>
-                <img
-                    src={grupo}
-                    alt="Foto em grupo de TCC da turma de Gestão"
-                />
-                <ul className='ul-timeline'>
-                  <li className='li-timeline'>
-                      <NavLink to="/timeline">
-                          Veja a nossa linha do tempo
-                      </NavLink>
-                  </li>{' '}
-                </ul>
+                <section className="section-us">
+                    <h1>Conheça a gente</h1>
+                    <img
+                        src={grupo}
+                        alt="Foto em grupo de TCC da turma de Gestão"
+                    />
+                </section>
+                <section className="section-timeline">
+                    <ul className="ul-timeline">
+                        <li>
+                            <NavLink to="/timeline" className={'li-timeline'}>
+                                LINHA DO TEMPO{' '}
+                            </NavLink>
+                        </li>{' '}
+                        <li>
+                            <NavLink to="/objetivo" className={'li-timeline'}>
+                                OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL
+                            </NavLink>
+                        </li>{' '}
+                    </ul>
+                </section>
             </main>
         </div>
     );
