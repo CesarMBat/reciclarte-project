@@ -21,7 +21,7 @@ function History() {
                     <p className='p-name'>- Fernanda Ferraz</p>
                   </section>
                   <div className="carousel-div">
-                      <Carousel variant="dark">
+                      <Carousel variant="dark" controls={false} indicators={false}>
                           <Carousel.Item interval={1500}>
                               <img
                                   src={imagem1}

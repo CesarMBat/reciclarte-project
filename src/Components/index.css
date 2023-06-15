@@ -1,6 +1,24 @@
 .div-index{
     margin: 50px;
+    justify-self: start;
+    grid-column: 1/2;
+}
+.main-index{
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 .main-margin{
-    margin-top: 5vh;
+    margin-top: 4vh;
+}
+.div-imgs-home{
+    justify-self: flex-end;
+    box-sizing: border-box;
+    margin-right: 5vw;
+    padding: 0;
+    align-self: flex-start;
+    grid-column: 2/2;
+}
+.imgs-flowers{
+    width: auto;
+    height: auto;
 }
