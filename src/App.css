@@ -19,7 +19,7 @@ ul {
 }
 .article-home{
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 48%;
   grid-template-rows: 100%;
   align-items: center;
   

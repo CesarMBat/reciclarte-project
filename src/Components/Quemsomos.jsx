@@ -7,7 +7,7 @@ const Quemsomos = () => {
     return (
         <div>
             <Layout />
-            <main className="main-who">
+            <main className="main-who main-margin">
                 <section className="section-us">
                     <h1>Conheça a gente</h1>
                     <img
