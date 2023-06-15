@@ -2,12 +2,12 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.css';
-import imagem1 from '../assets/imagem1-carrousel.png';
-import imagem2 from '../assets/imagem2-carrousel.png';
-import imagem3 from '../assets/imagem3-carrousel.png';
-import '../App.css';
+import imagem1 from '../../assets/imagem1-carrousel.png';
+import imagem2 from '../../assets/imagem2-carrousel.png';
+import imagem3 from '../../assets/imagem3-carrousel.png';
+import '../../App.css';
 import './historia.css';
-import Layout from './Layout';
+import Layout from '../Header/Layout';
 //import React, {Component} from 'react';
 
 function History() {
@@ -22,7 +22,7 @@ function History() {
                     <p className='p-name'>- Fernanda Ferraz</p>
                   </section>
                   <div className="carousel-div">
-                      <Carousel variant="dark" indicators={false} controls={false}>
+                      <Carousel variant="dark" controls={false} indicators={false}>
                           <Carousel.Item interval={1500}>
                               <img
                                   src={imagem1}
