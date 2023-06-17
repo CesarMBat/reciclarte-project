@@ -11,7 +11,7 @@ const Quemsomos = () => {
     const ref_Timeline = useRef(null);
     const ref_goBack = useRef(null)
     const ref_Objective = useRef(null)
-    const handleClick = () => {
+    const goTimeline = () => {
         ref_Timeline.current?.scrollIntoView({ behavior: 'smooth' });
     };
     const goBack = () => {
@@ -21,9 +21,23 @@ const Quemsomos = () => {
         ref_Objective.current?.scrollIntoView({ behavior: 'smooth' })
     }
     return (
-        <div ref={ref_goBack}>
+        <div>
             <Layout />
-            <main className="main-who main-margin">
+            <main className="main-who main-margin" ref={ref_goBack}>
+            <section className="section-timeline">
+                    <ul className="ul-timeline">
+                        <li >
+                            <NavLink onClick={goTimeline} className={'li-timeline'}>
+                                LINHA DO TEMPO{' '}
+                            </NavLink>
+                        </li>{' '}
+                        <li>
+                            <NavLink onClick={goObjetive} className={'li-timeline'}>
+                                OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL
+                            </NavLink>
+                        </li>{' '}
+                    </ul>
+                </section>
                 <section className="section-us">
                     <h1>Conheça a gente</h1>
                     <img
@@ -37,29 +51,17 @@ const Quemsomos = () => {
                     <div className='hover-div hv5'></div>
                     <div className='hover-div hv6'></div>
                 </section>
-                <section className="section-timeline">
-                    <ul className="ul-timeline">
-                        <li >
-                            <NavLink onClick={handleClick} className={'li-timeline'}>
-                                LINHA DO TEMPO{' '}
-                            </NavLink>
-                        </li>{' '}
-                        <li>
-                            <NavLink onClick={goObjetive} className={'li-timeline'}>
-                                OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL
-                            </NavLink>
-                        </li>{' '}
-                    </ul>
-                </section>
+                
                 <div style={{ height: '50rem' }}></div>
                 <div ref={ref_Timeline}>
                     <Timeline />
                 </div>
-                <div style={{ height: '50rem' }}></div>
+                <div style={{ height: '50rem', marginBottom:"10vh" }} ></div>
 
                 <div ref={ref_Objective}>
                     <Objetivo />
                 </div>
+                <div style={{ height: '30rem' }}></div>
 
 
 

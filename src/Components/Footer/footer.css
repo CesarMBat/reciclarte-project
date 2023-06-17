@@ -1,0 +1,32 @@
+.footer{
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #396164;
+    width: 100%;
+    margin-top: 5vh;
+
+}
+.small-footer{
+    color: #f8be8e;
+    font-size: 0.8rem;
+}
+.section-footer{
+    display: flex;
+    flex-flow: column wrap;
+}
+.section-left{
+    justify-self: left;
+}
+.section-center{
+    justify-self: center;
+}
+.section-right{
+    justify-self: right;
+}
+.cytech{
+    color: #fff;
+}

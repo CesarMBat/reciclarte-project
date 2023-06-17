@@ -48,6 +48,13 @@ ul {
   grid-column: 1/2;
   justify-self: center;
 }
+.header-menu-true{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
 .nav {
     background-color: #396164;
     color: #f8be8e;
@@ -89,5 +96,5 @@ ul {
     border-bottom-color: #f8be8e;
 }
 .main-margin{
-    margin-top: 4vh;
+    margin-top: 6vh;
 }

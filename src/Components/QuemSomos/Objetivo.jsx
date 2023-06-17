@@ -4,7 +4,7 @@ import './objetivo.css'
 
 const Objetivo = () => {
     return (
-        <div>
+        <div className='main-margin'>
             <main className='main-objetive main-margin'>
                 <h1> OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL</h1>
                 <ul className='ul-objetive'>

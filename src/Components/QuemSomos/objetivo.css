@@ -1,8 +1,12 @@
 
 .main-objetive{
     text-align: center;
-    margin-top: 4vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
 }
 .ul-objetive{
     font-size: 1.5rem;
+    text-align: center;
 }
