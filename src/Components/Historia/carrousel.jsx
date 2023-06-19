@@ -2,11 +2,12 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.css';
-import imagem1 from '../assets/imagem1-carrousel.png';
-import imagem2 from '../assets/imagem2-carrousel.png';
-import imagem3 from '../assets/imagem3-carrousel.png';
-import '../App.css';
-import Layout from './Layout';
+import imagem1 from '../../assets/imagem1-carrousel.png';
+import imagem2 from '../../assets/imagem2-carrousel.png';
+import imagem3 from '../../assets/imagem3-carrousel.png';
+import '../../App.css';
+import './historia.css';
+import Layout from '../Header/Layout';
 //import React, {Component} from 'react';
 
 function History() {
@@ -26,21 +27,21 @@ function History() {
                               <img
                                   src={imagem1}
                                   alt="Garrafas de bebida servindo como vaso"
-                                  className="d-block w-80 h-50"
+                                  className="d-block w-80 img-car"
                               />
                           </Carousel.Item>
                           <Carousel.Item interval={1500}>
                               <img
                                   src={imagem2}
                                   alt="Jarros servindo como vaso"
-                                  className="d-block w-80 h-50"
+                                  className="d-block w-80 img-car"
                               />
                           </Carousel.Item>
                           <Carousel.Item interval={1500}>
                               <img
                                   src={imagem3}
                                   alt="Garrafas servindo como vaso"
-                                  className="d-block w-80 h-50"
+                                  className="d-block w-80 img-car"
                               />
                           </Carousel.Item>
                       </Carousel>

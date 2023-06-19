@@ -1,10 +1,10 @@
 //import React from 'react'
 import { Outlet, NavLink } from 'react-router-dom';
-import '../App.css'
+import '../../App.css'
 const Layout = () => {
     return (
         <div>
-            <header>
+            <header className='header-menu-true'>
                 <div className="nav">
                     <h1 className="title" to="/index">Recicl&#39;Arte</h1>
 

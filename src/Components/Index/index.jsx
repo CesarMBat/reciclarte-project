@@ -1,8 +1,9 @@
 //import React from 'react'
-import Layout from "./Layout";
-import Logo from '../assets/reciclarte-logo.png'
+import Layout from '../Header/Layout';
+import Logo from '../../assets/reciclarte-logo.png'
 import './index.css'
-import Flowers from '../assets/teste.png'
+import Flowers from '../../assets/teste.png'
+import Footer from '../Footer/Footer';
 const index = () => {
     return (
         <>
@@ -18,6 +19,7 @@ const index = () => {
                     <img src={Flowers} alt="flores-lindas" className="imgs-flowers"/>
                 </div>
             </main>
+            <Footer />
         </>
     );
 };

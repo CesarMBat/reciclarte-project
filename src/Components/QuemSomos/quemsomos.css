@@ -19,7 +19,7 @@
     border-bottom-color: #000;
 }
 .main-margin{
-    margin-top: 4vh;
+    margin-top: 6vh;
 }
 .hover-div{
     width: 50px;
@@ -57,4 +57,18 @@
     left: 55%;
     width: 80px;
     height: 80px;
+}
+.div-start-page{
+    position: fixed;
+    bottom: 0;
+    margin: 1rem;
+    padding: 0.5rem;
+    right: 0;
+    size: 50%;
+}
+.button-start-page{
+    padding: 0.5rem;
+
+    background-color: #396164;
+    border: 1px #f4fcae inset;
 }

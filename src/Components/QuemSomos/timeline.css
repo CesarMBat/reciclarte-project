@@ -1,0 +1,29 @@
+.div-timeline{
+    display: inline-flex;
+    width: 70%;
+    border-bottom: 4px solid #000;
+    position: relative;
+    max-width: 1280px;
+    margin-top: 50vh;
+    justify-content: space-evenly;
+}
+
+.p-timeline{
+    font-size: 2rem;
+    text-align: center;
+}
+.div-year{
+    border-right: 4px solid #000;
+    width: 100%;
+    transition: 0.3s;
+    padding: 0.5rem;
+}
+.div-year:hover{
+    background-color: #396164;
+    color: #f8be8e;
+}
+.div-p-time{
+    margin-top: 2vh;
+    font-size: 2rem;
+    text-align: center;
+}

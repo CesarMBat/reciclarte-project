@@ -1,11 +1,10 @@
 //import React from 'react'
 import './objetivo.css'
-import Layout from './Layout';
+
 
 const Objetivo = () => {
     return (
-        <div>
-            <Layout />
+        <div className='main-margin'>
             <main className='main-objetive main-margin'>
                 <h1> OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL</h1>
                 <ul className='ul-objetive'>
