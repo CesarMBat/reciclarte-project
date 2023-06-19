@@ -1,20 +1,25 @@
 .main-who{
     text-align: center;
 }
+.section-timeline{
+    justify-content: left;
+    display: flex;
+    position: fixed;
+    background-color: #ffffff5e;
+    width: 22vw;
+    border-radius: 1rem;
+}
 .ul-timeline{
     list-style-type: none;
-    text-align: center;
-    display: inline-flex;
-    justify-content: space-around;
+    display: inline-block;
     width: 70vw;
-    margin: auto;
-    padding: 0rem 1rem 0rem 1rem;
+    align-items: center;
 }
 .li-timeline{
     text-decoration: none;
     text-align: center;
     color: black;
-    font-size: 2rem;
+    font-size: 1.2rem;
     transition: 0.3s;
     border-bottom: 1px solid #000;
     transition: border-bottom-width 1s ease;
@@ -32,38 +37,6 @@
     width: 50px;
     height: 50px;
     position: absolute;
-}
-.hv1{
-    top: 15%;
-    left: 43%;
-    height: 80px;
-
-}
-.hv2{
-    top: 16%;
-    left: 47%;
-    height: 70px;
-}
-.hv3{
-    top: 16%;
-    left: 52%;
-}
-.hv4{
-    top: 22%;
-    left: 45%;
-    height: 80px;
-}
-.hv5{
-    top: 20%;
-    left: 49%;
-    height: 70px;
-
-}
-.hv6{
-    top: 20%;
-    left: 55%;
-    width: 80px;
-    height: 80px;
 }
 .div-start-page{
     position: fixed;
