@@ -35,7 +35,7 @@ const Quemsomos = () => {
             <main className="main-who main-margin">
                 <section className="section-timeline" >
                     <ul className="ul-timeline">
-                        <li>
+                        <li className='li-timeline-'>
                             <NavLink
                                 onClick={goTimeline}
                                 className={'li-timeline'}
@@ -43,12 +43,12 @@ const Quemsomos = () => {
                                 LINHA DO TEMPO{' '}
                             </NavLink>
                         </li>{' '}
-                        <li>
+                        <li className='li-timeline-'>
                             <NavLink onClick={goWeb} className={'li-timeline'}>
                                 VALORES{' '}
                             </NavLink>
                         </li>{' '}
-                        <li>
+                        <li className='li-timeline-'>
                             <NavLink
                                 onClick={goObjetive}
                                 className={'li-timeline'}

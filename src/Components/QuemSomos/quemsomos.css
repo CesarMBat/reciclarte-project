@@ -6,7 +6,7 @@
     display: flex;
     position: fixed;
     background-color: #ffffff5e;
-    width: 22vw;
+    width: 16vw;
     border-radius: 1rem;
 }
 .ul-timeline{
@@ -14,6 +14,10 @@
     display: inline-block;
     width: 70vw;
     align-items: center;
+}
+.li-timeline-{
+    margin-top: 1vh;
+
 }
 .li-timeline{
     text-decoration: none;
