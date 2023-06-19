@@ -15,12 +15,7 @@ const Quemsomos = () => {
                         src={grupo}
                         alt="Foto em grupo de TCC da turma de Gestão"
                     />
-                    <div className='hover-div hv1'></div>
-                    <div className='hover-div hv2'></div>
-                    <div className='hover-div hv3'></div>
-                    <div className='hover-div hv4'></div>
-                    <div className='hover-div hv5'></div>
-                    <div className='hover-div hv6'></div>
+                    
                 </section>
                 <section className="section-timeline">
                     <ul className="ul-timeline">
