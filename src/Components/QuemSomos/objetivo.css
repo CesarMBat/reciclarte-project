@@ -1,12 +1,40 @@
-
-.main-objetive{
+.main-objetive {
     text-align: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: 70vh;
 }
-.ul-objetive{
+.ul-objetive {
     font-size: 1.5rem;
     text-align: center;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 40% 40%;
+    justify-content: center;
+    align-items: center;
+}
+.div-li-obj {
+    border: 1px inset #396164;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+.dlo1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.dlo2 {
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+.dlo3 {
+    grid-column: 1/2;
+    grid-row: 2/2;
+    margin-top: 5vh;
+}
+.dlo4 {
+    grid-column: 2/2;
+    grid-row: 2/2;
+    margin-top: 5vh;
 }

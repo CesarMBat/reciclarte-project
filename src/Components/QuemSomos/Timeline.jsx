@@ -1,12 +1,10 @@
 import { useState } from 'react';
 import './timeline.css';
 const Timeline = () => {
-    let pshow = document.getElementsByClassName('div-p-time');
     const [show, setShow1] = useState();
 
     const mouseOver = (index) => {
         setShow1(index);
-        pshow.style.transition = '0.3s';
     };
     const mouseOut = () => {
         setShow1(false);
@@ -15,6 +13,8 @@ const Timeline = () => {
     return (
         <div>
             <main className="main-timeline main-margin">
+                <h1>Linha do Tempo</h1>
+
                 <div className="div-timeline">
                     <div
                         className="div-year"

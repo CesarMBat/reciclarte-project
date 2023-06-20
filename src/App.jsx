@@ -1,23 +1,25 @@
 import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
-import Index from './Components/Index/index'
+import Index from './Components/Index/index';
 import History from './Components/Historia/carrousel';
 import Layout from './Components/Header/Layout';
 import Quemsomos from './Components/QuemSomos/Quemsomos';
 import Services from './Components/Servicos/Services';
-
+import WorkUs from './Components/Form/WorkUs';
 
 function App() {
     return (
         <>
+
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={< Layout/>}></Route>
-                    <Route index element={< Index/>}></Route>
+                    <Route path="/" element={<Layout />}></Route>
+                    <Route index element={<Index />}></Route>
                     <Route path="/historia" element={<History />} />
                     <Route path="/quem_somos" element={<Quemsomos />} />
                     <Route path="/servicos" element={<Services />} />
+                    <Route path="/trabalhe_conosco" element={<WorkUs />} />
                 </Routes>
             </BrowserRouter>
         </>

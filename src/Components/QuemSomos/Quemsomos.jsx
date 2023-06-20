@@ -79,8 +79,9 @@ const Quemsomos = () => {
                 >
                     <Web />
                 </div>
+                <div style={{ height: '20rem' }}></div>
 
-                <div ref={ref_Objective}>
+                <div ref={ref_Objective} style={{marginTop:'25vh'}}>
                     <Objetivo />
                 </div>
                 <div style={{ height: '30rem' }}></div>
