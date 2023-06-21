@@ -22,8 +22,12 @@
     background-color: #396164;
     color: #f8be8e;
 }
+.div-year:hover .div-p-time{
+    opacity: 0.4;
+}
 .div-p-time{
     margin-top: 2vh;
     font-size: 2rem;
     text-align: center;
+    transition: opacity 0.5s ease-in-out 0s;
 }

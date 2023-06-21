@@ -7,7 +7,12 @@ const Footer = () => {
             <footer className='footer'>
                 <section className='section-footer section-left'>
                     <small className='small-footer'>Entre em contato: </small>
-                    <img src={Insta} alt="Nosso Instagram" />
+                    <figure className='figure-insta'>
+                        <img src={Insta} alt="Nosso Instagram" />
+                        <figcaption>
+                            <small className='small-footer'>Instagram</small>
+                        </figcaption>
+                    </figure>
                 </section>
                 <section className='section-footer section-center'>
                     <small className='small-footer small-center'>Desenvolvido por <small className="cytech">&copy; CYTECH</small></small>
