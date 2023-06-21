@@ -1,16 +1,19 @@
-.div-index{
+.div-index {
     margin: 50px;
     justify-self: start;
     grid-column: 1/2;
+    display: flex;
+    flex-flow: column wrap;
 }
-.main-index{
+.main-index {
     display: grid;
+    height: 90vh;
     grid-template-columns: 50% 50%;
 }
-.main-margin{
+.main-margin {
     margin-top: 6vh;
 }
-.div-imgs-home{
+.div-imgs-home {
     justify-self: flex-end;
     box-sizing: border-box;
     margin-right: 5vw;
@@ -18,7 +21,33 @@
     align-self: flex-start;
     grid-column: 2/2;
 }
-.imgs-flowers{
-    width: auto;
-    height: auto;
+.imgs-flowers {
+    width: 40vw;
+    height: 80vh;
+}
+.img-logo {
+    width: 40vw;
+}
+.btn-index {
+    align-self: center;
+
+    transition: ease-in-out 2s;
+    background-color: #f8be8e;
+    border: 1px inset #396164;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 1rem;
+    font-weight: 800;
+    margin: 1vh 0 1vh 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-index:hover {
+    border: 1px solid #308287;
 }

@@ -1,5 +1,5 @@
 .footer{
-    height: 11vh;
+    height: 12vh;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     justify-content: space-between;
@@ -7,12 +7,13 @@
     padding: 2rem;
     background-color: #396164;
     width: 100%;
-    margin-top: 5vh;
-    
+    bottom: 0;
+    left: 0;
+    position: relative;
 }
 .small-footer{
     color: #f8be8e;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 .section-footer{
     display: flex;
