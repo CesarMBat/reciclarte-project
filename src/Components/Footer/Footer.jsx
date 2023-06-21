@@ -4,6 +4,7 @@ import Insta from '../../assets/instagram.svg';
 const Footer = () => {
     return (
         <>
+
             <footer className="footer">
                 <section className="section-footer section-left">
                     <small className="small-footer">Entre em contato: </small>

@@ -1,5 +1,5 @@
 .footer{
-    height: 10vh;
+    height: 12vh;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     justify-content: space-between;
@@ -30,4 +30,11 @@
 }
 .cytech{
     color: #fff;
+}
+.figure-insta{
+    display: inline-flex;
+    
+}
+figcaption{
+    padding-left: 1vw;
 }
