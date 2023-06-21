@@ -22,7 +22,7 @@ const Layout = () => {
                                 Nossa História
                             </NavLink>
                         </li>
-                        <li className="list-header">
+                        <li className="list-header">    
                             {' '}
                             <NavLink to="/quem_somos" className="a-nav">
                                 Quem Somos

@@ -32,12 +32,11 @@
     color: #f8be8e;
 }
 .div-year:hover .div-p-time{
-    opacity: 0.4;
+    transition: 5s ease-in;
 }
 .div-p-time{
     position: absolute;
     margin-top: 5vh;
     font-size: 2rem;
     text-align: center;
-    transition: opacity 0.5s ease-in-out 0s;
 }
