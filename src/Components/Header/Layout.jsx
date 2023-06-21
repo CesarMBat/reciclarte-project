@@ -6,7 +6,9 @@ const Layout = () => {
         <div>
             <header className='header-menu-true'>
                 <div className="nav">
-                    <h1 className="title" to="/index">Recicl&#39;Arte</h1>
+                    <NavLink to="/" className='h1-title'>
+                        <h1 className="title">Recicl&#39;Arte</h1>
+                    </NavLink>
 
                     <ul className="nav-header">
                         <li className="list-header">
