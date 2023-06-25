@@ -11,6 +11,39 @@
     margin: 0.5rem;
 
 }
+.section-timeline{
+    justify-content: left;
+    display: flex;
+    position: fixed;
+    background-color: #ffffff5e;
+    width: 16vw;
+    border-radius: 1rem;
+}
+.ul-timeline{
+    list-style-type: none;
+    display: inline-block;
+    width: 70vw;
+    align-items: center;
+}
+.li-timeline-{
+    margin-top: 1vh;
+
+}
+.li-timeline{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    border-bottom: 1px solid #000;
+    transition: border-bottom-width 1s ease;
+    transition: border-bottom-color 1s ease;
+}
+.li-timeline:hover{
+    border-bottom-width: 2px;
+    border-bottom-color: #000;
+    
+}
 .main-margin{
     margin-top: 10vh;
 }
