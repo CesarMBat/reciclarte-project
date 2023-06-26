@@ -25,6 +25,19 @@
     align-items: center;
     padding-bottom: 10rem;
 }
+.div-us{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: 50vh;
+    width: 50vw;
+    position: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.div-each{
+    height: 100%;
+    width: 100%;
+}
 .ul-timeline{
     list-style-type: none;
     display: inline-block;
@@ -52,6 +65,9 @@
 }
 .main-margin{
     margin-top: 6vh;
+}
+.img-grupo{
+    border-radius: 1rem;
 }
 .hover-div{
     width: 50px;

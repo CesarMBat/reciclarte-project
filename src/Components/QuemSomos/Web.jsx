@@ -8,7 +8,7 @@ const Web = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 marginTop: '10vh',
-                height: '80vh',
+                height: '100vh',
             }}
         >
             <h1>Stakeholders</h1>

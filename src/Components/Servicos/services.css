@@ -1,7 +1,8 @@
-.main-services{
+.div-how{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 20% 20%;
     grid-template-rows: 50% 50%;
+    justify-content: center;
 }
 .section-materials{
     border: 2px #396164 inset;
@@ -11,6 +12,12 @@
     margin: 0.5rem;
 
 }
+.h2-how{
+    text-align: center;
+}
+.smaller{
+    font-size: 1.5rem;
+}
 .section-timeline{
     justify-content: left;
     display: flex;
@@ -18,6 +25,10 @@
     background-color: #ffffff5e;
     width: 16vw;
     border-radius: 1rem;
+}
+.h3-nav{
+    display: block;
+    text-align: center;
 }
 .ul-timeline{
     list-style-type: none;
@@ -53,4 +64,16 @@
 .h1-services{
     text-align: center;
     text-decoration: underline 1px;
+    font-size: 2rem;
+    
+}
+.svg-images{
+    position: fixed;
+}
+.div-center{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    justify-content: space-evenly;
 }
