@@ -1,13 +1,29 @@
 .main-who{
     text-align: center;
 }
+.home-title{
+    font-weight: 500;
+    font-size: 3.2rem;
+}
 .section-timeline{
     justify-content: left;
     display: flex;
+    flex-flow: column nowrap;
     position: fixed;
     background-color: #ffffff5e;
     width: 16vw;
     border-radius: 1rem;
+}
+.h3-nav{
+    display: block;
+}
+.section-us{
+    height: 80vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10rem;
 }
 .ul-timeline{
     list-style-type: none;

@@ -31,9 +31,9 @@ const Quemsomos = () => {
             <div>
                 <Layout />
             </div>{' '}
-            <div ref={ref_goBack}></div>
             <main className="main-who main-margin">
                 <section className="section-timeline" >
+                    <h3 className='h3-nav'>Navegue</h3>
                     <ul className="ul-timeline">
                         <li className='li-timeline-'>
                             <NavLink
@@ -45,7 +45,7 @@ const Quemsomos = () => {
                         </li>{' '}
                         <li className='li-timeline-'>
                             <NavLink onClick={goWeb} className={'li-timeline'}>
-                                VALORES{' '}
+                                STAKEHOLDERS{' '}
                             </NavLink>
                         </li>{' '}
                         <li className='li-timeline-'>
@@ -59,11 +59,13 @@ const Quemsomos = () => {
                         </li>{' '}
                     </ul>
                 </section>
-                <section className="section-us">
-                    <h1>Conheça a gente</h1>
+                <section className="section-us" ref={ref_goBack}>
+                    <h1 className='home-title'>Conheça a gente</h1>
                     <img
                         src={grupo}
                         alt="Foto em grupo de TCC da turma de Gestão"
+                        height={'60%'}
+                        width={'50%'}
                     />
                     
                 </section>

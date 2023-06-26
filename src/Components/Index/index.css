@@ -49,5 +49,6 @@
     justify-content: center;
 }
 .btn-index:hover {
+    background-color: #f9a057;
     border: 1px solid #308287;
 }
