@@ -32,10 +32,10 @@ const Quemsomos = () => {
                 <Layout />
             </div>{' '}
             <main className="main-who main-margin">
-                <section className="section-timeline" >
-                    <h3 className='h3-nav'>Navegue</h3>
+                <section className="section-timeline">
+                    <h3 className="h3-nav">Navegue</h3>
                     <ul className="ul-timeline">
-                        <li className='li-timeline-'>
+                        <li className="li-timeline-">
                             <NavLink
                                 onClick={goTimeline}
                                 className={'li-timeline'}
@@ -43,12 +43,12 @@ const Quemsomos = () => {
                                 LINHA DO TEMPO{' '}
                             </NavLink>
                         </li>{' '}
-                        <li className='li-timeline-'>
+                        <li className="li-timeline-">
                             <NavLink onClick={goWeb} className={'li-timeline'}>
                                 STAKEHOLDERS{' '}
                             </NavLink>
                         </li>{' '}
-                        <li className='li-timeline-'>
+                        <li className="li-timeline-">
                             <NavLink
                                 onClick={goObjetive}
                                 className={'li-timeline'}
@@ -58,10 +58,23 @@ const Quemsomos = () => {
                             </NavLink>
                         </li>{' '}
                     </ul>
+                    <div className="div-start-page">
+                        <button onClick={goBack} className="button-start-page">
+                            <img
+                                src={arrow}
+                                alt="voltar para o começo da página"
+                            />
+                        </button>
+                    </div>
                 </section>
                 <section className="section-us" ref={ref_goBack}>
-                    <h1 className='home-title'>Conheça a gente</h1>
-                    <img src={grupo} alt="Foto do grupo de gestão" height={'100%'} className='img-grupo'/>
+                    <h1 className="home-title">Conheça a gente</h1>
+                    <img
+                        src={grupo}
+                        alt="Foto do grupo de gestão"
+                        height={'100%'}
+                        className="img-grupo"
+                    />
                     <div className="div-us">
                         <div className="div-each"></div>
                         <div className="div-each"></div>
@@ -87,12 +100,6 @@ const Quemsomos = () => {
                     <Objetivo />
                 </div>
                 <div style={{ height: '30rem' }}></div>
-
-                <div className="div-start-page">
-                    <button onClick={goBack} className="button-start-page">
-                        <img src={arrow} alt="voltar para o começo da página" />
-                    </button>
-                </div>
             </main>
         </div>
     );

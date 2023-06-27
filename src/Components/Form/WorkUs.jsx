@@ -7,6 +7,8 @@ const WorkUs = () => {
             <Layout />
             <div className='div-form'>
                 <form action="post" className='form-msg'>
+                <h1 className='h1-form'>Mande sua mensagem com seu pedido:</h1>
+
                     <div className="div-section">
                         <label htmlFor="" className='label'>Nome: </label>
                         <input type="text" id="input"  required/>

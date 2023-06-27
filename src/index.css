@@ -2,3 +2,15 @@
   margin: 0;
   padding: 0;
 }
+.section-timeline{
+  border: 1px inset #000;
+  border-radius: 1rem;
+  margin-left: 0.5vw;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  width: 20vw;
+}
+.home-title{
+  font-weight: 500;
+  font-size: 3.2rem;
+}

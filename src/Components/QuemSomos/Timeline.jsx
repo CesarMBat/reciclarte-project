@@ -53,7 +53,9 @@ const Timeline = () => {
                     {show == 2 && (
                         <p className="p2">Fundação da marca Recicl&#39;arte</p>
                     )}
-                    {show == 3 && <p className="p3">Abertura da loja física</p>}
+                    {show == 3 && (
+                        <p className="p3">Abertura da loja física</p>
+                    )}
                     {show == 4 && (
                         <p className="p4">
                             Líder em decoração com materiais reciclados

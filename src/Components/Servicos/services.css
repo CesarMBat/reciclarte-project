@@ -33,8 +33,6 @@
 .ul-timeline{
     list-style-type: none;
     display: inline-block;
-    width: 70vw;
-    align-items: center;
 }
 .li-timeline-{
     margin-top: 1vh;
