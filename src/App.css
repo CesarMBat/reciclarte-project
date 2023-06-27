@@ -84,10 +84,13 @@ ul {
     }
     .a-nav {
         font-size: 0.5rem;
+        color: #396164;
     }
     .carousel-div {
         display: none;
+
     }
+
 }
 .a-nav {
     text-decoration: none;
