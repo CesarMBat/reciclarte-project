@@ -61,13 +61,13 @@ const Quemsomos = () => {
                 </section>
                 <section className="section-us" ref={ref_goBack}>
                     <h1 className='home-title'>Conheça a gente</h1>
-                    <img
-                        src={grupo}
-                        alt="Foto em grupo de TCC da turma de Gestão"
-                        height={'60%'}
-                        width={'50%'}
-                    />
-                    
+                    <img src={grupo} alt="Foto do grupo de gestão" height={'100%'} className='img-grupo'/>
+                    <div className="div-us">
+                        <div className="div-each"></div>
+                        <div className="div-each"></div>
+                        <div className="div-each"></div>
+                        <div className="div-each"></div>
+                    </div>
                 </section>
 
                 <div style={{ height: '50rem' }}></div>
@@ -83,7 +83,7 @@ const Quemsomos = () => {
                 </div>
                 <div style={{ height: '20rem' }}></div>
 
-                <div ref={ref_Objective} style={{marginTop:'25vh'}}>
+                <div ref={ref_Objective} style={{ marginTop: '25vh' }}>
                     <Objetivo />
                 </div>
                 <div style={{ height: '30rem' }}></div>
