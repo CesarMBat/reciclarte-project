@@ -12,8 +12,12 @@
     margin: 0.5rem;
 
 }
+.section-how{
+    height: 100vh;
+}
 .h2-how{
     text-align: center;
+    margin-top: 10vh;
 }
 .smaller{
     font-size: 1.5rem;
@@ -74,4 +78,27 @@
     grid-template-columns: 30% 70%;
     align-items: center;
     justify-content: space-evenly;
+}
+.section-workus{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.div-workus{
+    display: grid;
+    grid-template-columns: 70% 50%;
+    justify-content: space-around;
+}
+.a-social{
+    margin-left: 1vw;
+}
+.div-right{
+    justify-self: flex-end;
+}
+.div-left{
+    justify-self: flex-start;
+}
+.flor{
+    margin-top: 5vh;
 }

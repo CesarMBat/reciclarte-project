@@ -27,7 +27,12 @@
 }
 .img-logo {
     width: 35vw;
+    transition: 0.5s;
 }
+.img-logo:hover {
+    -webkit-filter: brightness(115%);
+}
+
 .btn-index {
     align-self: center;
 

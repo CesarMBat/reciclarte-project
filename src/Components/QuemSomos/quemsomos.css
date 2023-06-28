@@ -27,16 +27,16 @@
 .div-us{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    height: 50vh;
-    width: 50vw;
-    position: static;
-    background-size: contain;
-    background-repeat: no-repeat;
+    height: 1000px;
+    width: 1000px;
+    
 }
 .div-each{
     height: 100%;
     width: 100%;
+    background-color: #f8be8e;
 }
+
 .ul-timeline{
     list-style-type: none;
     display: inline-block;

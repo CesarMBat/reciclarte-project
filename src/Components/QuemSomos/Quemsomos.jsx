@@ -3,7 +3,7 @@ import grupo from '../../assets/grupo.png';
 import { NavLink } from 'react-router-dom';
 import './quemsomos.css';
 import Timeline from './Timeline';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import Objetivo from './Objetivo';
 
 import arrow from '../../assets/up-arrow-svgrepo-com.svg';
@@ -25,6 +25,15 @@ const Quemsomos = () => {
     };
     const goWeb = () => {
         ref_Web.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    const [show, setShow] = useState('');
+
+    const handleHover = (index) => {
+        setShow(index);
+    };
+    const handleLeave = () => {
+        setShow(false);
     };
     return (
         <div>
@@ -69,18 +78,54 @@ const Quemsomos = () => {
                 </section>
                 <section className="section-us" ref={ref_goBack}>
                     <h1 className="home-title">Conheça a gente</h1>
+                    <div className="div-us">
+                        {show == 1 && (
+                            <div
+                                className="div-each"
+                                onMouseEnter={handleHover}
+                                onMouseLeave={handleLeave}
+                            >
+                                <h3>NOME PESSOA</h3>
+                                <p>DESCRICOA</p>
+                            </div>
+                        )}
+                        {show == 2 && (
+                            <div
+                                className="div-each"
+                                onMouseEnter={handleHover}
+                                onMouseLeave={handleLeave}
+                            >
+                                <h3>NOME PESSOA</h3>
+                                <p>DESCRICOA</p>
+                            </div>
+                        )}
+                        {show == 3 && (
+                            <div
+                                className="div-each"
+                                onMouseEnter={handleHover}
+                                onMouseLeave={handleLeave}
+                            >
+                                <h3>NOME PESSOA</h3>
+                                <p>DESCRICOA</p>
+                            </div>
+                        )}
+                        {show == 4 && (
+                            <div
+                                className="div-each"
+                                onMouseEnter={handleHover}
+                                onMouseLeave={handleLeave}
+                            >
+                                <h3>NOME PESSOA</h3>
+                                <p>DESCRICOA</p>
+                            </div>
+                        )}
+                    </div>
                     <img
                         src={grupo}
                         alt="Foto do grupo de gestão"
                         height={'100%'}
                         className="img-grupo"
                     />
-                    <div className="div-us">
-                        <div className="div-each"></div>
-                        <div className="div-each"></div>
-                        <div className="div-each"></div>
-                        <div className="div-each"></div>
-                    </div>
                 </section>
 
                 <div style={{ height: '50rem' }}></div>
