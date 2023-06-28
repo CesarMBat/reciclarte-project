@@ -3,7 +3,7 @@ import grupo from '../../assets/grupo.png';
 import { NavLink } from 'react-router-dom';
 import './quemsomos.css';
 import Timeline from './Timeline';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import Objetivo from './Objetivo';
 
 import arrow from '../../assets/up-arrow-svgrepo-com.svg';
@@ -26,16 +26,25 @@ const Quemsomos = () => {
     const goWeb = () => {
         ref_Web.current?.scrollIntoView({ behavior: 'smooth' });
     };
+
+    const [show, setShow] = useState('');
+
+    const handleHover = (index) => {
+        setShow(index);
+    };
+    const handleLeave = () => {
+        setShow(false);
+    };
     return (
         <div>
             <div>
                 <Layout />
             </div>{' '}
             <main className="main-who main-margin">
-                <section className="section-timeline" >
-                    <h3 className='h3-nav'>Navegue</h3>
+                <section className="section-timeline">
+                    <h3 className="h3-nav">Navegue</h3>
                     <ul className="ul-timeline">
-                        <li className='li-timeline-'>
+                        <li className="li-timeline-">
                             <NavLink
                                 onClick={goTimeline}
                                 className={'li-timeline'}
@@ -43,12 +52,12 @@ const Quemsomos = () => {
                                 LINHA DO TEMPO{' '}
                             </NavLink>
                         </li>{' '}
-                        <li className='li-timeline-'>
+                        <li className="li-timeline-">
                             <NavLink onClick={goWeb} className={'li-timeline'}>
                                 STAKEHOLDERS{' '}
                             </NavLink>
                         </li>{' '}
-                        <li className='li-timeline-'>
+                        <li className="li-timeline-">
                             <NavLink
                                 onClick={goObjetive}
                                 className={'li-timeline'}
@@ -58,16 +67,65 @@ const Quemsomos = () => {
                             </NavLink>
                         </li>{' '}
                     </ul>
+                    <div className="div-start-page">
+                        <button onClick={goBack} className="button-start-page">
+                            <img
+                                src={arrow}
+                                alt="voltar para o começo da página"
+                            />
+                        </button>
+                    </div>
                 </section>
                 <section className="section-us" ref={ref_goBack}>
-                    <h1 className='home-title'>Conheça a gente</h1>
-                    <img src={grupo} alt="Foto do grupo de gestão" height={'100%'} className='img-grupo'/>
+                    <h1 className="home-title">Conheça a gente</h1>
                     <div className="div-us">
-                        <div className="div-each"></div>
-                        <div className="div-each"></div>
-                        <div className="div-each"></div>
-                        <div className="div-each"></div>
+                        {show == 1 && (
+                            <div
+                                className="div-each"
+                                onMouseEnter={handleHover}
+                                onMouseLeave={handleLeave}
+                            >
+                                <h3>NOME PESSOA</h3>
+                                <p>DESCRICOA</p>
+                            </div>
+                        )}
+                        {show == 2 && (
+                            <div
+                                className="div-each"
+                                onMouseEnter={handleHover}
+                                onMouseLeave={handleLeave}
+                            >
+                                <h3>NOME PESSOA</h3>
+                                <p>DESCRICOA</p>
+                            </div>
+                        )}
+                        {show == 3 && (
+                            <div
+                                className="div-each"
+                                onMouseEnter={handleHover}
+                                onMouseLeave={handleLeave}
+                            >
+                                <h3>NOME PESSOA</h3>
+                                <p>DESCRICOA</p>
+                            </div>
+                        )}
+                        {show == 4 && (
+                            <div
+                                className="div-each"
+                                onMouseEnter={handleHover}
+                                onMouseLeave={handleLeave}
+                            >
+                                <h3>NOME PESSOA</h3>
+                                <p>DESCRICOA</p>
+                            </div>
+                        )}
                     </div>
+                    <img
+                        src={grupo}
+                        alt="Foto do grupo de gestão"
+                        height={'100%'}
+                        className="img-grupo"
+                    />
                 </section>
 
                 <div style={{ height: '50rem' }}></div>
@@ -87,12 +145,6 @@ const Quemsomos = () => {
                     <Objetivo />
                 </div>
                 <div style={{ height: '30rem' }}></div>
-
-                <div className="div-start-page">
-                    <button onClick={goBack} className="button-start-page">
-                        <img src={arrow} alt="voltar para o começo da página" />
-                    </button>
-                </div>
             </main>
         </div>
     );

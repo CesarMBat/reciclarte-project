@@ -1,6 +1,6 @@
 //import React from 'react'
 import './footer.css';
-import Insta from '../../assets/instagram.svg';
+import Insta from '../../assets/SVGSOCIAL/instagram.svg';
 const Footer = () => {
     return (
         <>

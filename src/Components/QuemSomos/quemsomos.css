@@ -11,7 +11,6 @@
     flex-flow: column nowrap;
     position: fixed;
     background-color: #ffffff5e;
-    width: 16vw;
     border-radius: 1rem;
 }
 .h3-nav{
@@ -28,21 +27,20 @@
 .div-us{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    height: 50vh;
-    width: 50vw;
-    position: fixed;
-    background-size: contain;
-    background-repeat: no-repeat;
+    height: 1000px;
+    width: 1000px;
+    
 }
 .div-each{
     height: 100%;
     width: 100%;
+    background-color: #f8be8e;
 }
+
 .ul-timeline{
     list-style-type: none;
     display: inline-block;
-    width: 70vw;
-    align-items: center;
+    width: 20vw;
 }
 .li-timeline-{
     margin-top: 1vh;
@@ -76,11 +74,11 @@
 }
 .div-start-page{
     position: fixed;
-    bottom: 0;
     margin: 1rem;
     padding: 0.5rem;
-    right: 0;
     size: 50%;
+    justify-self: end;
+    align-self: flex-end;
 }
 .button-start-page{
     padding: 0.5rem;
