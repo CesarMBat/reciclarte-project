@@ -96,6 +96,7 @@
     .section-timeline{
         width: 300px;
         height: 10vh;
+        position: fixed;
     }
     .ul-timeline{
         display: inline-flex;
@@ -107,4 +108,5 @@
     .div-space{
         margin: 1rem;
     }
+    
 }

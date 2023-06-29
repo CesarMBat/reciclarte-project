@@ -70,6 +70,8 @@
     }
     .div-imgs-home{
         text-align: center;
+        display: flex;
+        justify-content: center;
     }
     .div-index{
         justify-content: center;
