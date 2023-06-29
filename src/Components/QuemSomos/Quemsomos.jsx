@@ -62,12 +62,14 @@ const Quemsomos = () => {
                                 onClick={goObjetive}
                                 className={'li-timeline'}
                             >
-                                OBJETIVOS DE DESENVOLVIMENTO <br />
+                                OBJETIVOS DE <br /> DESENVOLVIMENTO <br />
                                 SUSTENTÁVEL
                             </NavLink>
                         </li>{' '}
                     </ul>
-                    <div className="div-start-page">
+                    
+                </section>
+                <div className="div-start-page">
                         <button onClick={goBack} className="button-start-page">
                             <img
                                 src={arrow}
@@ -75,8 +77,7 @@ const Quemsomos = () => {
                             />
                         </button>
                     </div>
-                </section>
-                <section className="section-us" ref={ref_goBack}>
+                <section className="section-us" ref={ref_goBack} style={{backgroundColor: '#f5f5f5'}}>
                     <h1 className="home-title">Conheça a gente</h1>
                     <div className="div-us">
                         {show == 1 && (

@@ -4,6 +4,7 @@
     justify-content: center;
     height: 100vh;
     align-items: center;
+    background-color: #f5f5f5;
 }
 .div-timeline{
     display: inline-flex;
@@ -12,10 +13,12 @@
     position: static;
     max-width: 1280px;
     justify-self: center;
-    margin-top: 10vh;
+    margin-top: 20vh;
     justify-content: space-evenly;
 }
-
+.img-time{
+    position: static;
+}
 .p-timeline{
     font-size: 2rem;
     text-align: center;
@@ -36,7 +39,7 @@
 }
 .div-p-time{
     position: absolute;
-    margin-top: 5vh;
     font-size: 2rem;
     text-align: center;
+    margin-bottom: 30vh;
 }

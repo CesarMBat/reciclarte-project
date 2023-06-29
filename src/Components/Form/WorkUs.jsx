@@ -19,7 +19,7 @@ const WorkUs = () => {
                     </div>
                     <div className="div-section">
                         <label htmlFor="" className='label'>Mensagem: </label>
-                        <input type="text" id="input" className='msg' size={30} required/>
+                        <input type="text" id="input" className='msg' height={'30vh'} required/>
                     </div>
                 </form>
             </div>

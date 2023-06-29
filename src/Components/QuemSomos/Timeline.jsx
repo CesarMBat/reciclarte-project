@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './timeline.css';
+import TIME from '../../assets/time-buddy-svgrepo-com.svg'
+
 const Timeline = () => {
     const [show, setShow1] = useState();
 
@@ -14,7 +16,47 @@ const Timeline = () => {
         <div>
             <main className="main-timeline main-margin">
                 <h1>Linha do Tempo</h1>
-
+                <div className="div-p-time">
+                    {show == 1 && (
+                        <>
+                            <p className="p1">
+                                Divulgação das criações nas redes
+                            </p>
+                            <p className="p1">
+                                Os primeiros projetos foram postados no
+                                instagram
+                            </p>
+                        </>
+                    )}
+                    {show == 2 && (
+                        <>
+                            {' '}
+                            <p className="p2">
+                                Fundação da marca Recicl&#39;arte
+                            </p>
+                            <p className="p2">E todo o design, cores e valores</p>
+                        </>
+                    )}
+                    {show == 3 && (
+                        <>
+                            <p className="p3">Abertura da loja física</p>
+                            <p className="p3">
+                                Localizada na Rua Madalena, 172 - Vila Madalena,
+                                São Paulo - SP
+                            </p>
+                        </>
+                    )}
+                    {show == 4 && (
+                        <>
+                            <p className="p4">
+                                Líder em decoração com materiais reciclados
+                            </p>
+                            <p className="p4">
+                                Sendo requisitadas por muitas pessoas
+                            </p>
+                        </>
+                    )}
+                </div>
                 <div className="div-timeline">
                     <div
                         className="div-year"
@@ -46,22 +88,9 @@ const Timeline = () => {
                     </div>
                 </div>
 
-                <div className="div-p-time">
-                    {show == 1 && (
-                        <p className="p1">Divulgação das criações nas redes</p>
-                    )}
-                    {show == 2 && (
-                        <p className="p2">Fundação da marca Recicl&#39;arte</p>
-                    )}
-                    {show == 3 && (
-                        <p className="p3">Abertura da loja física</p>
-                    )}
-                    {show == 4 && (
-                        <p className="p4">
-                            Líder em decoração com materiais reciclados
-                        </p>
-                    )}
-                </div>
+                
+                <img src={TIME} className='img-time'/>
+
             </main>
         </div>
     );
