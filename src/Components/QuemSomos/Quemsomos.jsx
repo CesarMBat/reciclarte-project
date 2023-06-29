@@ -129,18 +129,18 @@ const Quemsomos = () => {
                     />
                 </section>
 
-                <div style={{ height: '50rem' }}></div>
+                <div style={{ height: '50rem'}} className='div-space'></div>
                 <div ref={ref_Timeline}>
                     <Timeline />
                 </div>
-                <div style={{ height: '30rem', marginBottom: '10vh' }}></div>
+                <div style={{ height: '30rem', marginBottom: '10vh' }} className='div-space'></div>
                 <div
                     ref={ref_Web}
                     style={{ textAlign: 'center', marginTop: '10vh' }}
                 >
                     <Web />
                 </div>
-                <div style={{ height: '20rem' }}></div>
+                <div style={{ height: '20rem' }} className='div-space'></div>
 
                 <div ref={ref_Objective} style={{ marginTop: '25vh' }}>
                     <Objetivo />

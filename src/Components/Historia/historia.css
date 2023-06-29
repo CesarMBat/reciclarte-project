@@ -8,3 +8,12 @@
 .main-margin{
     margin-top: 10vh;
 }
+@media (max-width: 600px) {
+    .article-home{
+        display: flex;
+        justify-content: center;
+    }
+    .section-history{
+        width: 90vw;
+    }
+}

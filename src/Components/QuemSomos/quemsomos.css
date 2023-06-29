@@ -89,3 +89,22 @@
     background-color: #396164;
     border: 1px #f4fcae inset;
 }
+@media (max-width: 600px) {
+    .main-who{
+        display: block;
+    }
+    .section-timeline{
+        width: 300px;
+        height: 10vh;
+    }
+    .ul-timeline{
+        display: inline-flex;
+    }
+    .img-grupo{
+        width: 90vw;
+        height: 50vh;
+    }
+    .div-space{
+        margin: 1rem;
+    }
+}

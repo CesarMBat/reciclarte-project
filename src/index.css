@@ -20,3 +20,6 @@ body{
   font-weight: 500;
   font-size: 3.2rem;
 }
+@media (max-width: 600px){
+  
+}

@@ -58,3 +58,26 @@
     background-color: #f9a057;
     border: 1px solid #308287;
 }
+@media (max-width: 600px) {
+    .main-index{
+        display: block;
+        justify-content: center;
+    }
+    .imgs-flowers{
+        width: 90vw;
+        height: 40vh;
+        margin: 0;
+    }
+    .div-imgs-home{
+        text-align: center;
+    }
+    .div-index{
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    .btn-index{
+        width: 30vw;
+    }
+}

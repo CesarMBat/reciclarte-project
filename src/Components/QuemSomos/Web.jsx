@@ -1,4 +1,5 @@
 import WebIMG from '../../assets/Web.png';
+import './web.css'
 const Web = () => {
     return (
         <div
@@ -16,6 +17,7 @@ const Web = () => {
                 src={WebIMG}
                 alt="Um pouco de nossos valores"
                 style={{ borderRadius: '1rem' }}
+                className='img-web'
             />
         </div>
     );
