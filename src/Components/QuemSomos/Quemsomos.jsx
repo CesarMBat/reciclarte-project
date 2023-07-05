@@ -3,7 +3,7 @@ import grupo from '../../assets/grupo.png';
 import { NavLink } from 'react-router-dom';
 import './quemsomos.css';
 import Timeline from './Timeline';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import Objetivo from './Objetivo';
 
 import arrow from '../../assets/up-arrow-svgrepo-com.svg';
@@ -26,15 +26,19 @@ const Quemsomos = () => {
     const goWeb = () => {
         ref_Web.current?.scrollIntoView({ behavior: 'smooth' });
     };
+    let menu_nav = document.getElementsByClassName("section-timeline");
 
-    const [show, setShow] = useState('');
-
-    const handleHover = (index) => {
-        setShow(index);
+    var myScrollFunc = function() {
+      var y = window.scrollY;
+      if (y >= 100) {
+        menu_nav.className = "section-timeline show"
+      } else {
+        menu_nav.className = "section-timeline hide"
+      }
     };
-    const handleLeave = () => {
-        setShow(false);
-    };
+    
+    window.addEventListener("scroll", myScrollFunc);
+    
     return (
         <div>
             <div>
@@ -79,52 +83,11 @@ const Quemsomos = () => {
                     </div>
                 <section className="section-us" ref={ref_goBack} style={{backgroundColor: '#f5f5f5'}}>
                     <h1 className="home-title">Conheça a gente</h1>
-                    <div className="div-us">
-                        {show == 1 && (
-                            <div
-                                className="div-each"
-                                onMouseEnter={handleHover}
-                                onMouseLeave={handleLeave}
-                            >
-                                <h3>NOME PESSOA</h3>
-                                <p>DESCRICOA</p>
-                            </div>
-                        )}
-                        {show == 2 && (
-                            <div
-                                className="div-each"
-                                onMouseEnter={handleHover}
-                                onMouseLeave={handleLeave}
-                            >
-                                <h3>NOME PESSOA</h3>
-                                <p>DESCRICOA</p>
-                            </div>
-                        )}
-                        {show == 3 && (
-                            <div
-                                className="div-each"
-                                onMouseEnter={handleHover}
-                                onMouseLeave={handleLeave}
-                            >
-                                <h3>NOME PESSOA</h3>
-                                <p>DESCRICOA</p>
-                            </div>
-                        )}
-                        {show == 4 && (
-                            <div
-                                className="div-each"
-                                onMouseEnter={handleHover}
-                                onMouseLeave={handleLeave}
-                            >
-                                <h3>NOME PESSOA</h3>
-                                <p>DESCRICOA</p>
-                            </div>
-                        )}
-                    </div>
+                    
                     <img
                         src={grupo}
                         alt="Foto do grupo de gestão"
-                        height={'100%'}
+                        height={'40%'}
                         className="img-grupo"
                     />
                 </section>

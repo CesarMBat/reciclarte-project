@@ -34,10 +34,10 @@ const Services = () => {
 
 
             <main className="main-services main-margin">
-                <section className="section-timeline">
+                <section className="section-timeline-ser">
                     <h3 className="h3-nav">Navegue</h3>
 
-                    <ul className="ul-timeline">
+                    <ul className="ul-timeline-ser">
                         <li className="li-timeline-">
                             <NavLink onClick={goHow} className={'li-timeline'}>
                                 COMO TRABALHAMOS{' '}
@@ -176,7 +176,7 @@ const Services = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <img src={INSTA} alt="" />
+                                    <img src={INSTA} className='img-svg-social' />
                                 </a>
                                 <a
                                     href="https://www.instagram.com/reciclarte.ios/"
@@ -184,7 +184,7 @@ const Services = () => {
                                     rel="noopener noreferrer"
                                     className="a-social"
                                 >
-                                    <img src={WPP} alt="" />
+                                    <img src={WPP} className='img-svg-social' />
                                 </a>
                             </div>
                         </div>

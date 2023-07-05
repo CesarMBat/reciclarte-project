@@ -37,6 +37,14 @@
 .div-year:hover .div-p-time{
     transition: 5s ease-in;
 }
+.hide {
+    opacity: 0;
+    left: -100%;
+  }
+  .show {
+    opacity: 1;
+    left: 0;
+  }
 .div-p-time{
     position: absolute;
     font-size: 2rem;

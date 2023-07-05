@@ -16,4 +16,8 @@
     .section-history{
         width: 90vw;
     }
+    .p-story{
+        margin-top: 5vh;
+        font-size: 1.7rem;
+    }
 }

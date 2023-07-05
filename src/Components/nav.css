@@ -5,6 +5,13 @@
     text-align: center;
 
 }
+.bm-burger-button{
+    height: 10%;
+}
+#react-burger-menu-btn{
+    height: 10%;
+
+}
 .menu-item {
     text-decoration: none;
     color: #f8be8e;
