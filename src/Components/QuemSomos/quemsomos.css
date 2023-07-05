@@ -89,12 +89,12 @@
     background-color: #396164;
     border: 1px #f4fcae inset;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .main-who{
         display: block;
     }
     .section-timeline{
-        width: 300px;
+        width: 100%;
         height: 10vh;
         position: fixed;
     }

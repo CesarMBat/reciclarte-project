@@ -58,7 +58,7 @@
     background-color: #f9a057;
     border: 1px solid #308287;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .main-index{
         display: block;
         justify-content: center;
