@@ -4,7 +4,7 @@ import './metodos.css';
 const Metodos = () => {
     return (
         <div>
-            <main className="main-objetive main-margin">
+            <main className="main-metodos main-margin">
                 <h1> MÉTODOS DE NEGÓCIOS</h1>
                 <ul className="ul-met">
                     <div className="div-li-obj-met dlo1">
