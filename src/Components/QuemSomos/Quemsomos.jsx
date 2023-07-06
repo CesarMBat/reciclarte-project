@@ -104,7 +104,7 @@ const Quemsomos = () => {
                 </div>
                 <div style={{ height: '20rem' }} className='div-space'></div>
 
-                <div ref={ref_Objective} style={{ marginTop: '25vh' }}>
+                <div ref={ref_Objective}>
                     <Objetivo />
                 </div>
                 <div style={{ height: '30rem' }}></div>

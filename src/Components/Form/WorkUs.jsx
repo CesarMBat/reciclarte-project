@@ -10,16 +10,16 @@ const WorkUs = () => {
                 <h1 className='h1-form'>Mande sua mensagem com seu pedido:</h1>
 
                     <div className="div-section">
-                        <label htmlFor="" className='label'>Nome: </label>
+                        <label htmlFor="" className='label'>Seu nome: </label>
                         <input type="text" id="input"  required/>
                     </div>
                     <div className="div-section">
-                        <label htmlFor="" className='label'>E-mail: </label>
+                        <label htmlFor="" className='label'>Seu e-mail: </label>
                         <input type="email" id="input" required/>
                     </div>
                     <div className="div-section">
-                        <label htmlFor="" className='label'>Mensagem: </label>
-                        <input type="text" id="input" className='msg' height={'30vh'} required/>
+                        <label htmlFor="" className='label'>Sua mensagem: </label>
+                        <input type="text" id="input" className='msg' required/>
                     </div>
                 </form>
             </div>

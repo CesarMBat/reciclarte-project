@@ -1,6 +1,34 @@
-@media (max-width: 600px){
-    .img-web{
-        width: 90vw;
-        height: 30vh;
+.main-web {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    height: 100vh;
+}
+.div-mobile {
+    display: none;
+}
+@media (max-width: 600px) {
+    .main-web{
+        height: 125vh;
+    }
+    .img-web {
+        display: none;
+    }
+    .div-mobile {
+        display: flex;
+        flex-flow: column;
+    }
+    .ul-mob {
+        list-style-type: none;
+    }
+    .ul-mob li {
+        border-radius: 1rem;
+        border: 1px inset #000;
+        margin-bottom: 2vh;
+        padding: 1rem;
+        width: 70vw;
+        font-size: 1.5rem;
     }
 }
