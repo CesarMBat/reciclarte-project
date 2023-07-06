@@ -44,8 +44,13 @@
     .ul-objetive {
         grid-template-columns: 50% 50%;
     }
-
+    .main-objetive{
+        height: 150vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
     .div-li-obj {
-        height: 20vh;
+        height: 15vh;
     }
 }

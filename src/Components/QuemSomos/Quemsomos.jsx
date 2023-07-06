@@ -87,7 +87,6 @@ const Quemsomos = () => {
                     <img
                         src={grupo}
                         alt="Foto do grupo de gestão"
-                        height={'40%'}
                         className="img-grupo"
                     />
                 </section>

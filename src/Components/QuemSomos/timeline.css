@@ -55,5 +55,7 @@
     .div-p-time{
         margin-bottom: 40vh;
     }
-    
+    .main-timeline{
+        height: 120vh;
+    }
 }

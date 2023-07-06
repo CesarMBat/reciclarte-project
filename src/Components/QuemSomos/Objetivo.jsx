@@ -8,7 +8,7 @@ import infinite from '../../assets/infinite.png';
 const Objetivo = () => {
     return (
         <div className="main-margin">
-            <main className="main-objetive main-margin">
+            <main className="main-objetive">
                 <h1> OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL</h1>
                 <ul className="ul-objetive">
                     <div className="div-li-obj dlo1">

@@ -17,7 +17,7 @@
     box-sizing: border-box;
     padding: 0.5rem;
     flex-flow: column nowrap;
-
+    text-align: left;
     width: 11vw;
 }
 .h3-nav {
@@ -65,6 +65,7 @@
 }
 .img-grupo {
     border-radius: 1rem;
+    width: 50vw;
 }
 .hover-div {
     width: 50px;
