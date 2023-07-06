@@ -1,7 +1,7 @@
 import { Outlet, NavLink } from 'react-router-dom';
 import '../../App.css'
 import Media from 'react-media';
-import Nav_Mobile from '../Nav-Mobile';
+import Nav_Mobile from '../Nav_Mobile';
 
 
 const Layout = () => {

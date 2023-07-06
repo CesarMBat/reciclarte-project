@@ -5,12 +5,19 @@
     text-align: center;
 
 }
-.bm-burger-button{
+.bm-burger-button > button{
     height: 10%;
 }
 #react-burger-menu-btn{
-    height: 10%;
+    height: 40px;
 
+}
+.nav-mobile{
+    background-color: #396164;
+}
+.menu-svg{
+    padding: 1rem;
+    height: 50px;
 }
 .menu-item {
     text-decoration: none;

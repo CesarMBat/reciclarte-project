@@ -179,7 +179,7 @@ const Services = () => {
                                     <img src={INSTA} className='img-svg-social' />
                                 </a>
                                 <a
-                                    href="https://www.instagram.com/reciclarte.ios/"
+                                    href="https://api.whatsapp.com/send/?phone=11963837232&text&type=phone_number&app_absent=0"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="a-social"
