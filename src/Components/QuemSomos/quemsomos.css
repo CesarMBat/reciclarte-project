@@ -96,7 +96,6 @@
         display: block;
     }
     .section-timeline {
-        justify-content: left;
         display: flex;
         flex-flow: column nowrap;
         position: fixed;
@@ -105,6 +104,7 @@
         width: 99vw;
         height: 15vh;
         text-align: center;
+        align-items: center;
         top: 0;
         margin-top: 5vh;
     }

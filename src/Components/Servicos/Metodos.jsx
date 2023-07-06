@@ -6,8 +6,8 @@ const Metodos = () => {
         <div>
             <main className="main-objetive main-margin">
                 <h1> MÉTODOS DE NEGÓCIOS</h1>
-                <ul className="ul-objetive ul-met">
-                    <div className="div-li-obj dlo1">
+                <ul className="ul-met">
+                    <div className="div-li-obj-met dlo1">
                         <img
                             src={img_ser.busi}
                             className="img-li"
@@ -21,7 +21,7 @@ const Metodos = () => {
                             (pessoas jurídicas)
                         </p>
                     </div>
-                    <div className="div-li-obj dlo2">
+                    <div className="div-li-obj-met dlo2">
                         <img
                             src={img_ser.client}
                             className="img-li"

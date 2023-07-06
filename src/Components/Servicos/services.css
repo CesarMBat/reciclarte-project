@@ -136,12 +136,15 @@
 
         flex-flow: column;
     }
+    .li-timeline{
+        font-size: 1.2rem;
+        text-align: center;
+    }
     .li-service {
         font-size: 2rem;
         text-align: center;
     }
     .section-timeline-ser {
-        justify-content: left;
         display: flex;
         flex-flow: column nowrap;
         position: fixed;
@@ -150,6 +153,7 @@
         width: 99vw;
         height: 15vh;
         text-align: center;
+        align-items: center;
         top: 0;
         margin-top: 5vh;
     }
@@ -164,5 +168,7 @@
     }
     .img-svg-social{
         height: 5vh;
+        margin-bottom: 2vh;
+
     }
 }
