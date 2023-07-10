@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './timeline.css';
-import TIME from '../../assets/time-buddy-svgrepo-com.svg'
+import TIME from '../../assets/time-buddy-svgrepo-com.svg';
 
 const Timeline = () => {
     const [show, setShow1] = useState();
@@ -34,7 +34,9 @@ const Timeline = () => {
                             <p className="p2">
                                 Fundação da marca Recicl&#39;arte
                             </p>
-                            <p className="p2">E todo o design, cores e valores</p>
+                            <p className="p2">
+                                E todo o design, cores e valores
+                            </p>
                         </>
                     )}
                     {show == 3 && (
@@ -52,7 +54,7 @@ const Timeline = () => {
                                 Líder em decoração com materiais reciclados
                             </p>
                             <p className="p4">
-                                Sendo requisitadas por muitas pessoas
+                                Sendo requisitadas diversas pessoas e empresas{' '}
                             </p>
                         </>
                     )}
@@ -63,34 +65,32 @@ const Timeline = () => {
                         onMouseOver={() => mouseOver(1)}
                         onMouseOut={mouseOut}
                     >
-                        <p className="p-timeline">2016</p>
+                        <p className="p-timeline">2020</p>
                     </div>
                     <div
                         className="div-year"
                         onMouseOver={() => mouseOver(2)}
                         onMouseOut={mouseOut}
                     >
-                        <p className="p-timeline">2017</p>
+                        <p className="p-timeline">2021</p>
                     </div>
                     <div
                         className="div-year"
                         onMouseOver={() => mouseOver(3)}
                         onMouseOut={mouseOut}
                     >
-                        <p className="p-timeline">2019</p>
+                        <p className="p-timeline">2023</p>
                     </div>
                     <div
                         className="div-year"
                         onMouseOver={() => mouseOver(4)}
                         onMouseOut={mouseOut}
                     >
-                        <p className="p-timeline">2023</p>
+                        <p className="p-timeline">FUTURO</p>
                     </div>
                 </div>
 
-                
-                <img src={TIME} className='img-time'/>
-
+                <img src={TIME} className="img-time" />
             </main>
         </div>
     );

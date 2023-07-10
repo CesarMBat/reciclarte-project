@@ -51,6 +51,9 @@
         justify-content: center;
     }
     .div-li-obj {
-        height: 20vh;
+        height: 25vh;
+    }
+    .li-obj{
+        font-size: 1.5rem;
     }
 }

@@ -3,7 +3,7 @@
     font-size: 3.2rem;
 }
 .img-car{
-    height: fit-content;
+    height: auto;
 }
 .main-margin{
     margin-top: 10vh;

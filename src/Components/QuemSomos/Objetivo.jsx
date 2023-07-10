@@ -13,22 +13,22 @@ const Objetivo = () => {
                 <ul className="ul-objetive">
                     <div className="div-li-obj dlo1">
                         <img src={books} className="img-li" height={'100rem'}/>
-                        <li>Educação de qualidade</li>
+                        <li className='li-obj'>Educação de qualidade</li>
                     </div>
                     <div className="div-li-obj dlo2">
                         <img src={graphics} className="img-li" height={'100rem'}/>
 
-                        <li>Trabalho decente e Crescimento econômico</li>
+                        <li className='li-obj'>Trabalho decente e Crescimento econômico</li>
                     </div>
                     <div className="div-li-obj dlo3">
                         <img src={boxes} className="img-li" height={'100rem'}/>
 
-                        <li>Indústria, Inovação e Infraestrutura</li>
+                        <li className='li-obj'>Indústria, Inovação e Infraestrutura</li>
                     </div>
                     <div className="div-li-obj dlo4">
                         <img src={infinite} className="img-li" height={'100rem'}/>
 
-                        <li>Consumo e Produção Responsáveis</li>
+                        <li className='li-obj'>Consumo e Produção Responsáveis</li>
                     </div>
                 </ul>
             </main>
