@@ -40,7 +40,7 @@ const Quemsomos = () => {
     window.addEventListener("scroll", myScrollFunc);
     
     return (
-        <div>
+        <div className='main-overflow'>
             <div>
                 <Layout />
             </div>{' '}

@@ -58,28 +58,48 @@
     background-color: #f9a057;
     border: 1px solid #308287;
 }
+.show-div {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.show-div.teste {
+    opacity: 1;
+}
+.p-showing {
+    font-size: 2rem;
+    text-align: justify;
+}
 @media (max-width: 500px) {
-    .main-index{
+    .main-index {
         display: block;
         justify-content: center;
+        height: 110vh;
     }
-    .imgs-flowers{
+    .img-logo {
+        height: 20vh;
+        width: 75vw;
+        overflow-x: hidden;
+    }
+    .p-showing {
+        font-size: 1.5rem;
+    }
+    .imgs-flowers {
         width: 90vw;
         height: 40vh;
         margin: 0;
     }
-    .div-imgs-home{
+    .div-imgs-home {
         text-align: center;
         display: flex;
         justify-content: center;
     }
-    .div-index{
+    .div-index {
         justify-content: center;
         display: flex;
         text-align: center;
         align-items: center;
     }
-    .btn-index{
+    .btn-index {
         width: 30vw;
     }
 }
