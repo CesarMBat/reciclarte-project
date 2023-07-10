@@ -3,7 +3,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 
 import Layout from '../Header/Layout';
 import Logo from '../../assets/reciclarte-logo.png';
-import './index.css';
+import './index-main.css';
 import Flowers from '../../assets/teste.png';
 import Footer from '../Footer/Footer';
 import { useState } from 'react';
