@@ -30,7 +30,7 @@
     .div-li-obj-met{
         border: 1px inset #396164;
         border-radius: 1rem;
-        height: 30vh;
+        height: auto;
         padding: 1rem;
         width: 90vw;
     }

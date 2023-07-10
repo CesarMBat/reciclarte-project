@@ -95,7 +95,7 @@ const Quemsomos = () => {
 
                 <div style={{ height: '50rem' }} className="div-space"></div>
                 <div ref={ref_Timeline}>
-                    <Media query={'max-width: 600px'}>
+                    <Media query={"min-width: 600px"}>
                         {(matches) => {
                             return matches ? <Timeline /> : <TimelineMob />;
                         }}

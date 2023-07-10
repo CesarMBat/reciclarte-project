@@ -92,7 +92,7 @@
     border: 1px #f4fcae inset;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     
     .main-who {
         display: block;
