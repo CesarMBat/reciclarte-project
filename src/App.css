@@ -9,16 +9,14 @@
 }
 .nav-header {
     display: inline-flex;
+    text-align: left;
+    list-style-type: none;
 }
 .list-header {
     margin-right: 2rem;
     font-size: 1.4rem;
 }
-ul {
-    display: inline-block;
-    text-align: left;
-    list-style-type: none;
-}
+
 .article-home {
     display: grid;
     grid-template-columns: 50% 48%;

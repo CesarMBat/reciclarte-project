@@ -14,24 +14,30 @@ const Services = () => {
     const ref_How = useRef(null);
     const ref_Met = useRef(null);
     const ref_goBack = useRef(null)
+    const ref_Work = useRef(null)
     const goHow = () => {
         ref_How.current?.scrollIntoView({ behavior: 'smooth' });
     };
     const goMet = () => {
         ref_Met.current?.scrollIntoView({ behavior: 'smooth' });
     };
+    const goWork = () => {
+        ref_Work.current?.scrollIntoView({behavior: 'smooth'})
+    }
     const goBack = () => {
         ref_goBack.current?.scrollIntoView({behavior: 'smooth'})
     }
     return (
         <div>
-            <div ref={ref_goBack}></div>
             <Layout />
+            <div ref={ref_goBack} style={{height: '2vh'}}></div>
+
+
             <main className="main-services main-margin">
-                <section className="section-timeline">
+                <section className="section-timeline-ser">
                     <h3 className="h3-nav">Navegue</h3>
 
-                    <ul className="ul-timeline">
+                    <ul className="ul-timeline-ser">
                         <li className="li-timeline-">
                             <NavLink onClick={goHow} className={'li-timeline'}>
                                 COMO TRABALHAMOS{' '}
@@ -40,6 +46,11 @@ const Services = () => {
                         <li className="li-timeline-">
                             <NavLink onClick={goMet} className={'li-timeline'}>
                                 MÉTODOS{' '}
+                            </NavLink>
+                        </li>{' '}
+                        <li className="li-timeline-">
+                            <NavLink onClick={goWork} className={'li-timeline'}>
+                                TRABALHE CONOSCO{' '}
                             </NavLink>
                         </li>{' '}
                         
@@ -53,45 +64,7 @@ const Services = () => {
                         </button>
                     </div>
                 </section>
-                <section className="section-workus">
-                    <h1 className='h1-work'>Trabalhe Conosco</h1>
-                    <div className="div-workus">
-                        <div className="div-left">
-                            <h2 className="h2-msg">
-                                Nos mande seu pedido por email:
-                            </h2>
-                            <NavLink
-                                to="/trabalhe_conosco"
-                                className="btn-index"
-                            >
-                                TRABALHE CONOSCO
-                            </NavLink>
-                        </div>
-                        <div className="div-right">
-                            <h2 className="h2-msg">Ou por:</h2>
-                            <div className="div-contact">
-                                <a
-                                    className="a-social"
-                                    href="https://www.instagram.com/reciclarte.ios/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <img src={INSTA} alt="" />
-                                </a>
-                                <a
-                                    href="https://www.instagram.com/reciclarte.ios/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="a-social"
-                                >
-                                    <img src={WPP} alt="" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <img src={Flor} alt="" className="flor" />
-                </section>
-                <div style={{ height: '30rem' }}></div>
+                
                 <div ref={ref_How}></div>
                 <section className="section-how">
                     <h1 className="h2-how">Como Trabalhamos</h1>
@@ -179,6 +152,44 @@ const Services = () => {
                 </section>
                 <section ref={ref_Met}>
                     <Metodos />
+                </section>
+                <section className="section-workus" ref={ref_Work}>
+                    <h1 className='h1-work'>Trabalhe Conosco</h1>
+                    <div className="div-workus">
+                        <div className="div-left">
+                            <h2 className="h2-msg">
+                                Nos mande seu pedido por email:
+                            </h2>
+                            <NavLink
+                                to="/trabalhe_conosco"
+                                className="btn-index"
+                            >
+                                TRABALHE CONOSCO
+                            </NavLink>
+                        </div>
+                        <div className="div-right">
+                            <h2 className="h2-msg">Ou por:</h2>
+                            <div className="div-contact">
+                                <a
+                                    className="a-social"
+                                    href="https://www.instagram.com/reciclarte.ios/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <img src={INSTA} className='img-svg-social' />
+                                </a>
+                                <a
+                                    href="https://api.whatsapp.com/send/?phone=11963837232&text&type=phone_number&app_absent=0"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="a-social"
+                                >
+                                    <img src={WPP} className='img-svg-social' />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src={Flor} alt="" className="flor" />
                 </section>
             </main>{' '}
         </div>

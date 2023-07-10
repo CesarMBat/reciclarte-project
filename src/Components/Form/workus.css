@@ -15,7 +15,7 @@
     display: flex;
     justify-self: center;
     width: 50vw;
-    height: auto;
+    height: 70vh;
 }
 .div-section{
     margin: 5vh 0 0 0;
@@ -31,4 +31,19 @@
 }
 .h1-form{
     text-align: center;
+}
+.msg{
+    height: 20vh;
+    margin-top: -5vh;
+    text-align: left;
+}
+@media (max-width: 500px){
+    .form-msg{
+        width: 90vw;
+        height: 75vh;
+    }
+    .label{
+        font-size: 2rem;
+        margin-bottom: 1vh;
+    }
 }

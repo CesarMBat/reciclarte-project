@@ -3,11 +3,13 @@ import grupo from '../../assets/grupo.png';
 import { NavLink } from 'react-router-dom';
 import './quemsomos.css';
 import Timeline from './Timeline';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import Objetivo from './Objetivo';
 
 import arrow from '../../assets/up-arrow-svgrepo-com.svg';
 import Web from './Web';
+import Media from 'react-media';
+import TimelineMob from './Timeline_mob';
 //import React from 'react'
 const Quemsomos = () => {
     const ref_Timeline = useRef(null);
@@ -26,17 +28,21 @@ const Quemsomos = () => {
     const goWeb = () => {
         ref_Web.current?.scrollIntoView({ behavior: 'smooth' });
     };
+    let menu_nav = document.getElementsByClassName('section-timeline');
 
-    const [show, setShow] = useState('');
+    var myScrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 100) {
+            menu_nav.className = 'section-timeline show';
+        } else {
+            menu_nav.className = 'section-timeline hide';
+        }
+    };
 
-    const handleHover = (index) => {
-        setShow(index);
-    };
-    const handleLeave = () => {
-        setShow(false);
-    };
+    window.addEventListener('scroll', myScrollFunc);
+
     return (
-        <div>
+        <div className="main-overflow">
             <div>
                 <Layout />
             </div>{' '}
@@ -62,89 +68,54 @@ const Quemsomos = () => {
                                 onClick={goObjetive}
                                 className={'li-timeline'}
                             >
-                                OBJETIVOS DE DESENVOLVIMENTO <br />
+                                OBJETIVOS DE <br /> DESENVOLVIMENTO <br />
                                 SUSTENTÁVEL
                             </NavLink>
                         </li>{' '}
                     </ul>
-                    <div className="div-start-page">
-                        <button onClick={goBack} className="button-start-page">
-                            <img
-                                src={arrow}
-                                alt="voltar para o começo da página"
-                            />
-                        </button>
-                    </div>
                 </section>
-                <section className="section-us" ref={ref_goBack}>
+                <div className="div-start-page">
+                    <button onClick={goBack} className="button-start-page">
+                        <img src={arrow} alt="voltar para o começo da página" />
+                    </button>
+                </div>
+                <section
+                    className="section-us"
+                    ref={ref_goBack}
+                    style={{ backgroundColor: '#f5f5f5' }}
+                >
                     <h1 className="home-title">Conheça a gente</h1>
-                    <div className="div-us">
-                        {show == 1 && (
-                            <div
-                                className="div-each"
-                                onMouseEnter={handleHover}
-                                onMouseLeave={handleLeave}
-                            >
-                                <h3>NOME PESSOA</h3>
-                                <p>DESCRICOA</p>
-                            </div>
-                        )}
-                        {show == 2 && (
-                            <div
-                                className="div-each"
-                                onMouseEnter={handleHover}
-                                onMouseLeave={handleLeave}
-                            >
-                                <h3>NOME PESSOA</h3>
-                                <p>DESCRICOA</p>
-                            </div>
-                        )}
-                        {show == 3 && (
-                            <div
-                                className="div-each"
-                                onMouseEnter={handleHover}
-                                onMouseLeave={handleLeave}
-                            >
-                                <h3>NOME PESSOA</h3>
-                                <p>DESCRICOA</p>
-                            </div>
-                        )}
-                        {show == 4 && (
-                            <div
-                                className="div-each"
-                                onMouseEnter={handleHover}
-                                onMouseLeave={handleLeave}
-                            >
-                                <h3>NOME PESSOA</h3>
-                                <p>DESCRICOA</p>
-                            </div>
-                        )}
-                    </div>
+
                     <img
                         src={grupo}
                         alt="Foto do grupo de gestão"
-                        height={'100%'}
                         className="img-grupo"
                     />
                 </section>
 
-                <div style={{ height: '50rem' }}></div>
+                <div style={{ height: '50rem' }} className="div-space"></div>
                 <div ref={ref_Timeline}>
-                    <Timeline />
+                    <Media query="(min-width: 600px)">
+                        {(matches) => {
+                            return matches ? <Timeline /> : <TimelineMob />;
+                        }}
+                    </Media>
                 </div>
-                <div style={{ height: '30rem', marginBottom: '10vh' }}></div>
+                <div
+                    style={{ height: '30rem', marginBottom: '10vh' }}
+                    className="div-space"
+                ></div>
                 <div
                     ref={ref_Web}
                     style={{ textAlign: 'center', marginTop: '10vh' }}
                 >
                     <Web />
                 </div>
-                <div style={{ height: '20rem' }}></div>
+                <div style={{ height: '20rem' }} className="div-space"></div>
 
-                <div ref={ref_Objective} style={{ marginTop: '25vh' }}>
+                <div ref={ref_Objective}>
                     <Objetivo />
                 </div>
-                <div style={{ height: '30rem' }}></div>
             </main>
         </div>
     );

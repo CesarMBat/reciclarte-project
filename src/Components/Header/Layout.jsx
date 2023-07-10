@@ -1,10 +1,14 @@
-//import React from 'react'
 import { Outlet, NavLink } from 'react-router-dom';
 import '../../App.css'
+import Media from 'react-media';
+import Nav_Mobile from '../Nav_Mobile';
+
+
 const Layout = () => {
     return (
         <div>
-            <header className='header-menu-true'>
+            <Media query="(min-width: 600px)">{matches => {
+                return matches ? <header className='header-menu-true'>
                 <div className="nav">
                     <NavLink to="/" className='h1-title'>
                         <h1 className="title">Recicl&#39;Arte</h1>
@@ -36,7 +40,10 @@ const Layout = () => {
                         </li>
                     </ul>
                 </div>
-            </header>
+            </header>  : < Nav_Mobile />
+            }}
+            </Media>
+            
             <Outlet />
         </div>
     );

@@ -13,7 +13,7 @@
 }
 .small-footer{
     color: #f8be8e;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 .section-footer{
     display: flex;
@@ -35,6 +35,10 @@
     display: inline-flex;
     
 }
-figcaption{
-    padding-left: 1vw;
+
+@media (max-width: 500px) {
+    .footer{
+        height: 30vh;
+        grid-template-columns: 60% 20%;
+    }
 }

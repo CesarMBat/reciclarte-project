@@ -1,13 +1,19 @@
-.main-timeline{
+.main-timeline-mob{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 110vh;
     align-items: center;
     background-color: #f5f5f5;
 }
-.div-timeline{
-    display: inline-flex;
+.section-timeline-mob{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100vw;
+}
+.div-timeline-mob{
+    display: flex;
+    flex-flow: column nowrap;
     width: 70%;
     border-bottom: 4px solid #000;
     position: static;
@@ -16,25 +22,25 @@
     margin-top: 20vh;
     justify-content: space-evenly;
 }
-.img-time{
-    position: static;
+.pmob{
+    font-size: 1.8rem;
 }
-.p-timeline{
+.p-timeline-mob{
     font-size: 2rem;
     text-align: center;
 }
-.div-year{
+.div-year-mob{
     margin-top: 2vh;
     border-right: 4px solid #000;
     width: 100%;
     transition: 0.3s;
     padding: 0.5rem;
 }
-.div-year:hover{
+.div-year-mob:hover{
     background-color: #396164;
     color: #f8be8e;
 }
-.div-year:hover .div-p-time{
+.div-year-mob:hover .div-p-time-mob{
     transition: 5s ease-in;
 }
 .hide {
@@ -45,21 +51,14 @@
     opacity: 1;
     left: 0;
   }
-.div-p-time{
-    position: absolute;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 30vh;
-}
-@media (max-width: 600px){
-    .div-p-time{
-        margin-bottom: 40vh;
-        margin-top: -8vh;
-    }
-    .main-timeline{
-        height: 120vh;
-    }
-    .p1, .p2, .p3, .p4{
-        font-size: 1.5rem;
-    }
+.div-p-time-mob{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 70%;
+    border-bottom: 4px solid #000;
+    position: static;
+    max-width: 1280px;
+    justify-self: center;
+    margin-top: 20vh;
+    justify-content: space-evenly;
 }

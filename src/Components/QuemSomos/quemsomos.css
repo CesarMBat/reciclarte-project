@@ -1,22 +1,32 @@
-.main-who{
-    text-align: center;
+.main-overflow{
+    overflow-x: hidden;
 }
-.home-title{
+.main-who {
+    text-align: center;
+    background-color: #f5f5f5;
+}
+.home-title {
     font-weight: 500;
     font-size: 3.2rem;
 }
-.section-timeline{
+.section-timeline {
     justify-content: left;
     display: flex;
-    flex-flow: column nowrap;
     position: fixed;
     background-color: #ffffff5e;
     border-radius: 1rem;
+    border: 1px inset #000;
+    margin-left: 0.5vw;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    flex-flow: column nowrap;
+    text-align: left;
+    width: 11vw;
 }
-.h3-nav{
+.h3-nav {
     display: block;
 }
-.section-us{
+.section-us {
     height: 80vh;
     display: flex;
     flex-flow: column nowrap;
@@ -24,29 +34,22 @@
     align-items: center;
     padding-bottom: 10rem;
 }
-.div-us{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    height: 1000px;
-    width: 1000px;
-    
-}
-.div-each{
+
+.div-each {
     height: 100%;
     width: 100%;
     background-color: #f8be8e;
 }
 
-.ul-timeline{
+.ul-timeline {
     list-style-type: none;
     display: inline-block;
     width: 20vw;
 }
-.li-timeline-{
+.li-timeline- {
     margin-top: 1vh;
-
 }
-.li-timeline{
+.li-timeline {
     text-decoration: none;
     text-align: center;
     color: black;
@@ -56,33 +59,71 @@
     transition: border-bottom-width 1s ease;
     transition: border-bottom-color 1s ease;
 }
-.li-timeline:hover{
+.li-timeline:hover {
     border-bottom-width: 2px;
     border-bottom-color: #000;
-    
 }
-.main-margin{
+.main-margin {
     margin-top: 6vh;
 }
-.img-grupo{
+.img-grupo {
     border-radius: 1rem;
+    width: 50vw;
 }
-.hover-div{
+.hover-div {
     width: 50px;
     height: 50px;
     position: absolute;
 }
-.div-start-page{
+.div-start-page {
     position: fixed;
     margin: 1rem;
     padding: 0.5rem;
     size: 50%;
     justify-self: end;
+    bottom: 0;
+    right: 0;
     align-self: flex-end;
 }
-.button-start-page{
+.button-start-page {
     padding: 0.5rem;
 
     background-color: #396164;
     border: 1px #f4fcae inset;
+}
+
+@media (max-width: 600px) {
+    
+    .main-who {
+        display: block;
+    }
+    .section-timeline {
+        display: flex;
+        flex-flow: column nowrap;
+        position: fixed;
+        background-color: #ffffff5e;
+        border-radius: 1rem;
+        width: 99vw;
+        height: 15vh;
+        text-align: center;
+        align-items: center;
+        top: 0;
+        margin-top: 7vh;
+    }
+    .ul-timeline {
+        display: flex;
+        width: 100vw;
+        justify-content: space-evenly;
+    }
+    .img-grupo {
+        width: 80vw;
+        height: auto;
+    }
+    .div-space {
+        margin: 1rem;
+        height: 10vh;
+    }
+    .section-us{
+        height: 70vh;
+    }
 }

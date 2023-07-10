@@ -3,8 +3,21 @@
     font-size: 3.2rem;
 }
 .img-car{
-    height: fit-content;
+    height: auto;
 }
 .main-margin{
     margin-top: 10vh;
+}
+@media (max-width: 600px) {
+    .article-home{
+        display: flex;
+        justify-content: center;
+    }
+    .section-history{
+        width: 90vw;
+    }
+    .p-story{
+        margin-top: 5vh;
+        font-size: 1.7rem;
+    }
 }

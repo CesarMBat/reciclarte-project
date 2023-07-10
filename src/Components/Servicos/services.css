@@ -1,104 +1,174 @@
-.div-how{
+.div-how {
     display: grid;
     grid-template-columns: 20% 20%;
     grid-template-rows: 50% 50%;
     justify-content: center;
+    background-color: #f5f5f5;
 }
-.section-materials{
+.section-materials {
     border: 2px #396164 inset;
-    
+    background-color: #f5f5f5;
     border-radius: 2rem;
     padding: 1.5rem;
     margin: 0.5rem;
-
 }
-.section-how{
+.section-how {
     height: 100vh;
+    background-color: #f5f5f5;
 }
-.h2-how{
+.h2-how {
     text-align: center;
     margin-top: 10vh;
 }
-.smaller{
+.smaller {
     font-size: 1.5rem;
 }
-.section-timeline{
+.section-timeline-ser {
     justify-content: left;
     display: flex;
     position: fixed;
     background-color: #ffffff5e;
-    width: 16vw;
     border-radius: 1rem;
+    border: 1px inset #000;
+    margin-left: 0.5vw;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    flex-flow: column nowrap;
+    box-sizing: border-box;
+    width: 11vw;
 }
-.h3-nav{
+.h3-nav {
     display: block;
     text-align: center;
 }
-.ul-timeline{
+.ul-timeline-ser {
     list-style-type: none;
     display: inline-block;
 }
-.li-timeline-{
+.li-timeline- {
     margin-top: 1vh;
-
 }
-.li-timeline{
+.li-timeline {
     text-decoration: none;
     text-align: center;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: 0.3s;
     border-bottom: 1px solid #000;
     transition: border-bottom-width 1s ease;
     transition: border-bottom-color 1s ease;
 }
-.li-timeline:hover{
+.li-timeline:hover {
     border-bottom-width: 2px;
     border-bottom-color: #000;
+}
+.main-margin {
+    margin-top: 10vh;
+    background-color: #f5f5f5;
+}
+.ul-services {
+    font-size: 1.8rem;
+    list-style-type: none;
     
 }
-.main-margin{
-    margin-top: 10vh;
-}
-.ul-services{
-    font-size: 1.8rem;
-}
-.h1-services{
+.h1-services {
     text-align: center;
     text-decoration: underline 1px;
     font-size: 2rem;
-    
 }
-.svg-images{
+.svg-images {
     position: fixed;
 }
-.div-center{
+.div-center {
     text-align: center;
     display: grid;
     grid-template-columns: 30% 70%;
     align-items: center;
     justify-content: space-evenly;
 }
-.section-workus{
+.section-workus {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+    height: 68vh;
 }
-.div-workus{
+.div-workus {
     display: grid;
     grid-template-columns: 70% 50%;
     justify-content: space-around;
+    width: 60vw;
 }
-.a-social{
-    margin-left: 1vw;
+.a-social {
+    padding: 3rem;
 }
-.div-right{
+.div-right {
     justify-self: flex-end;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
 }
-.div-left{
+.div-left {
     justify-self: flex-start;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
 }
-.flor{
+.flor {
     margin-top: 5vh;
+    border-radius: 1rem;
+}
+@media (max-width: 500px) {
+    .div-how {
+        display: flex;
+        flex-flow: column;
+        width: 70vw;
+        justify-content: center;
+        width: 100vw;
+        background-color: #f5f5f5;
+    }
+    .section-how{
+        height: 170vh;
+        justify-content: center;
+        display: flex;
+
+        flex-flow: column;
+    }
+    .li-timeline{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .li-service {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .section-timeline-ser {
+        display: flex;
+        flex-flow: column nowrap;
+        position: fixed;
+        background-color: #ffffff5e;
+        border-radius: 1rem;
+        width: 99vw;
+        height: 15vh;
+        text-align: center;
+        align-items: center;
+        top: 0;
+        margin-top: 8vh;
+    }
+    .ul-timeline-ser {
+        display: flex;
+        width: 100vw;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .flor{
+        height: 30vh;
+    }
+    .img-svg-social{
+        height: 5vh;
+        margin-bottom: 2vh;
+
+    }
 }
