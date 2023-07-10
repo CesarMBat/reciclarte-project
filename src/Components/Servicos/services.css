@@ -130,7 +130,7 @@
         background-color: #f5f5f5;
     }
     .section-how{
-        height: 180vh;
+        height: 170vh;
         justify-content: center;
         display: flex;
 
@@ -155,7 +155,7 @@
         text-align: center;
         align-items: center;
         top: 0;
-        margin-top: 5vh;
+        margin-top: 8vh;
     }
     .ul-timeline-ser {
         display: flex;
