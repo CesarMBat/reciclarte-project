@@ -22,6 +22,7 @@ const WorkUs = () => {
                         <label htmlFor="" className='label'>Sua mensagem: </label>
                         <input type="text" id="input" className='msg' required/>
                     </div>
+                    <button className='btn-send'>Enviar</button>
                 </form>
             </div>
         </div>

@@ -11,11 +11,11 @@
     padding: 2rem;
     border: 2px inset #000;
     border-radius: 2rem;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     display: flex;
     justify-self: center;
     width: 50vw;
-    height: 70vh;
+    height: 80vh;
 }
 .div-section{
     margin: 5vh 0 0 0;
@@ -37,6 +37,22 @@
     margin-top: -5vh;
     text-align: left;
 }
+.btn-send{
+    background-color: #f8be8e;
+    border: 1px inset #687a86;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 1rem;
+    font-weight: 800;
+    margin-top: 8vh;
+    box-sizing: border-box;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+   
+    align-self: center;
+}
 @media (max-width: 500px){
     .form-msg{
         width: 90vw;
@@ -45,5 +61,9 @@
     .label{
         font-size: 2rem;
         margin-bottom: 1vh;
+    }
+    .btn-send{
+        width: 20vw;
+        height: 15vh;
     }
 }
