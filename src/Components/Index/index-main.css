@@ -105,6 +105,7 @@
     }
     .p-showing {
         font-size: 1.5rem;
+        text-align: center;
     }
     .imgs-flowers {
         width: 90vw;
