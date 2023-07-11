@@ -1,65 +1,70 @@
-.main-timeline{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-    background-color: #f5f5f5;
+.main-timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: #f5f5f5;
 }
-.div-timeline{
-    display: inline-flex;
-    width: 70%;
-    border-bottom: 4px solid #000;
-    position: static;
-    max-width: 1280px;
-    justify-self: center;
-    margin-top: 20vh;
-    justify-content: space-evenly;
+.div-timeline {
+  display: inline-flex;
+  width: 70%;
+  border-bottom: 4px solid #000;
+  position: static;
+  max-width: 1280px;
+  justify-self: center;
+  justify-content: space-evenly;
 }
-.img-time{
-    position: static;
+.img-time {
+  position: static;
 }
-.p-timeline{
-    font-size: 2rem;
-    text-align: center;
+.p-timeline {
+  font-size: 2rem;
+  text-align: center;
 }
-.div-year{
-    margin-top: 2vh;
-    border-right: 4px solid #000;
-    width: 100%;
-    transition: 0.3s;
-    padding: 0.5rem;
+.div-year {
+  margin-top: 2vh;
+  border-right: 4px solid #000;
+  width: 100%;
+  transition: 0.3s;
+  padding: 0.5rem;
 }
-.div-year:hover{
-    background-color: #396164;
-    color: #f8be8e;
+.div-year:hover {
+  background-color: #396164;
+  color: #f8be8e;
 }
-.div-year:hover .div-p-time{
-    transition: 5s ease-in;
+.div-year:hover .div-p-time {
+  transition: 5s ease-in;
 }
 .hide {
-    opacity: 0;
-    left: -100%;
-  }
-  .show {
-    opacity: 1;
-    left: 0;
-  }
-.div-p-time{
-    position: absolute;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 30vh;
+  opacity: 0;
+  left: -100%;
 }
-@media (max-width: 600px){
-    .div-p-time{
-        margin-bottom: 40vh;
-        margin-top: -8vh;
-    }
-    .main-timeline{
-        height: 120vh;
-    }
-    .p1, .p2, .p3, .p4{
-        font-size: 1.5rem;
-    }
+.show {
+  opacity: 1;
+  left: 0;
+}
+.div-p-time {
+  height: 20vh;
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .div-p-time {
+    margin-bottom: 40vh;
+    margin-top: -8vh;
+  }
+  .main-timeline {
+    height: 120vh;
+  }
+  .p1,
+  .p2,
+  .p3,
+  .p4 {
+    font-size: 1.5rem;
+  }
 }
