@@ -11,6 +11,29 @@
     grid-template-columns: 50% 50%;
     background-color: #f5f5f5;
 }
+.div-img-btn {
+    display: flex;
+    flex-flow: column;
+}
+.btn-know {
+    transition: ease-in-out 2s;
+    background-color: #f8be8e;
+    border: 1px inset #687a86;
+    width: 8vw;
+    height: 5vh;
+    border-radius: 1rem;
+    font-weight: 800;
+    margin: 1vh 0 1vh 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
 .main-margin {
     margin-top: 6vh;
 }
@@ -100,6 +123,9 @@
         align-items: center;
     }
     .btn-index {
+        width: 30vw;
+    }
+    .btn-know{
         width: 30vw;
     }
 }
