@@ -31,7 +31,7 @@ const Local = () => {
             >
               <Marker
                 position={defaultCenter}
-                icon={"http:// labs.google.com/ridefinder/images/mm_20_green.png"}
+                icon={"http://labs.google.com/ridefinder/images/mm_20_green.png"}
               >
               </Marker>
             </GoogleMap>
