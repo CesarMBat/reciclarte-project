@@ -113,8 +113,8 @@
         margin: 0;
     }
     .div-imgs-home {
-        text-align: center;
-        display: flex;
+        display: grid;
+        width: 100vw;
         justify-content: center;
     }
     .div-index {
