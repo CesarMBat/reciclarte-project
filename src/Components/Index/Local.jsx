@@ -31,7 +31,7 @@ const Local = () => {
             >
               <Marker
                 position={defaultCenter}
-                icon={"http:// google.com/mapfiles/ms/micons/green-dot.png"}
+                icon={"http://google.com/mapfiles/ms/micons/green-dot.png"}
               >
               </Marker>
             </GoogleMap>
