@@ -38,7 +38,7 @@
 
 @media (max-width: 500px) {
     .footer{
-        height: 30vh;
+        height: 32vh;
         grid-template-columns: 60% 20%;
     }
 }

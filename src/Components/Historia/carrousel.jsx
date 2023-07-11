@@ -18,7 +18,7 @@ function History() {
                 <h1 className="home-title">Um propósito em cada detalhe</h1>
                 <article className='article-home'>
                 <section className='section-history'>
-                    <p className='p-story'>&#34;Me inspirei na minha mãe, que pega garrafas de vidro mal descartadas e as reutiliza para montar uma peça decorativa. Quando vi uma garrafa no chão, tive a ideia de transformar em decoração pro meu quarto e postei no instagram. Surpreendentemente viralisou com pessoas perguntando se eu vendia, logo tive a ideia de fundar uma empresa ainda por meio online. Mas como foi pegando mais popularidade e gerando mais renda, fundamos uma firma pra empregar artesãos independentes e gerar mais renda pra eles&#34;</p>
+                    <p className='p-story'>&#34;Me inspirei na minha mãe, que pega garrafas de vidro mal descartadas e as reutiliza para montar uma peça decorativa. Quando vi uma garrafa no chão, tive a ideia de transformar em decoração pro meu quarto e postei no instagram. Surpreendentemente viralizou com pessoas perguntando se eu vendia, logo tive a ideia de fundar uma empresa ainda por meio online. Mas como foi pegando mais popularidade e gerando mais renda, fundamos uma firma pra empregar artesãos independentes e gerar mais renda pra eles&#34;</p>
                     <p className='p-name'>- Fernanda Ferraz</p>
                   </section>
                   <div className="carousel-div">
