@@ -84,7 +84,7 @@ const Quemsomos = () => {
                     ref={ref_goBack}
                     style={{ backgroundColor: '#f5f5f5' }}
                 >
-                    <h1 className="home-title">Conheça a gente</h1>
+                    <h1 className="home-title">Conheça nossa equipe</h1>
 
                     <img
                         src={grupo}
