@@ -22,7 +22,7 @@
     .main-local{
         display: flex;
         flex-flow: column nowrap;
-        height: 100vh;
+        height: 130vh;
     }
     .section-left-local{
         text-align: center;
