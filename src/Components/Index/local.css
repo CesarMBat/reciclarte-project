@@ -1,0 +1,31 @@
+.main-local{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 1rem;
+    justify-content: center;
+}
+.p-local{
+    font-size: 1.5rem;
+}
+.h1-local{
+    font-size: 3rem;
+}
+.section-left-local{
+    padding: 2rem;
+}
+.mapStyles{
+    height: 60vh;
+    width: 99%;
+}
+@media screen and (max-width: 500px) {
+    .main-local{
+        display: flex;
+        flex-flow: column nowrap;
+        height: 100vh;
+    }
+    .section-left-local{
+        text-align: center;
+        padding: 0;
+    }
+}
